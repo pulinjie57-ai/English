@@ -1,0 +1,2520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>旅行定制师英语训练营｜完整版</title>
+<style>
+:root{
+  --ink:#182033;--paper:#f7f0e6;--gold:#c9a84c;--teal:#176b6b;--rust:#b5451b;--muted:#7d776d;--white:#fff;
+}
+*{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,"PingFang SC",sans-serif;background:var(--paper);color:var(--ink);}
+header{position:sticky;top:0;z-index:10;background:var(--ink);color:white;padding:16px;border-bottom:3px solid var(--gold)}
+header h1{margin:0;color:var(--gold);font-size:22px} header p{margin:4px 0 0;color:#ccc;font-size:12px}
+.container{max-width:820px;margin:0 auto;padding:14px 14px 90px}
+.tabs{display:flex;gap:6px;overflow-x:auto;background:#fff;border-radius:14px;padding:6px;margin:14px 0;box-shadow:0 2px 12px #0001}
+.tab-btn{flex:0 0 auto;border:0;border-radius:10px;padding:10px 12px;background:transparent;color:var(--muted);font-weight:700}
+.tab-btn.active{background:var(--ink);color:var(--gold)}
+.cat-scroll{display:flex;gap:8px;overflow-x:auto;margin:10px 0 14px}.cat-pill{border:1px solid #e0cf99;background:#fff;border-radius:999px;padding:7px 13px;white-space:nowrap;color:var(--muted)}.cat-pill.active{background:var(--gold);color:var(--ink)}
+.tab-content{display:none}.tab-content.active{display:block}
+.card,.sentence-card,.phone-card{background:#fff;border-radius:18px;padding:18px;margin:12px 0;box-shadow:0 3px 16px #00000014}
+.card{border-top:4px solid var(--gold);min-height:230px}.tag,.type{font-size:12px;color:var(--teal);font-weight:800;letter-spacing:.06em;margin-bottom:8px}
+.en{font-size:24px;font-weight:800;margin:8px 0}.phonetic{color:var(--muted);font-size:14px}.zh{display:none;background:#e8f4f4;color:var(--teal);border-radius:10px;padding:12px;margin-top:14px}.zh.show{display:block}
+.example{color:var(--muted);font-size:14px;line-height:1.55;margin-top:8px}.btnrow{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}.btn{border:0;border-radius:12px;padding:11px 13px;font-weight:800;background:var(--ink);color:var(--gold)}.btn.gold{background:var(--gold);color:var(--ink)}.btn.teal{background:var(--teal);color:white}.btn.rust{background:var(--rust);color:white}.btn.light{background:#f2eadb;color:var(--ink)}
+.score{display:flex;gap:8px}.score div{flex:1;background:#fff;border-radius:12px;padding:10px;text-align:center}.score b{font-size:22px;color:var(--teal)}
+.section-title{font-size:18px;font-weight:900;margin:18px 0 8px}.sentence-en{font-size:17px;font-weight:750;line-height:1.5}.sentence-zh{font-size:14px;color:var(--muted);line-height:1.5;margin-top:6px}
+.speak{border:1px solid #dfcf9f;border-radius:999px;background:#fff;padding:6px 10px;color:var(--muted);font-size:13px;margin-top:8px}.copy{border:0;background:var(--gold);border-radius:999px;padding:8px 12px;font-weight:800}
+.phone-card{background:var(--ink);color:#f7f0e6}.phone-card .type{color:var(--gold)}.line{margin:10px 0;line-height:1.5}.speaker{font-size:12px;color:#aaa;font-weight:800}.you{border-left:3px solid var(--gold);padding-left:10px;color:#ead89a}.tip{background:#00000012;border-radius:10px;padding:10px;margin-top:12px;color:var(--muted);font-size:14px;line-height:1.55}.phone-card .tip{background:#ffffff12;color:#ccc}
+pre{white-space:pre-wrap;font-family:inherit;font-size:15px;line-height:1.65;color:#333;background:#faf7ef;border-radius:12px;padding:12px;overflow:auto}
+.small{font-size:12px;color:var(--muted);text-align:center;margin:8px 0}
+
+.search-results{background:#fff;border:1px solid #e0cf99;border-radius:14px;margin:8px 0 12px;padding:10px;display:none;box-shadow:0 2px 10px #0000000d}
+.search-result-item{padding:10px;border-bottom:1px solid #f0e7cf;cursor:pointer}
+.search-result-item:last-child{border-bottom:0}
+.search-result-en{font-weight:900;color:var(--ink);font-size:16px}
+.search-result-zh{color:var(--teal);font-size:14px;margin-top:3px}
+.search-result-cat{color:var(--muted);font-size:12px;margin-top:3px}
+.search-actions{display:flex;gap:8px;margin-top:8px}
+
+</style>
+</head>
+<body>
+<header><h1>Travel English</h1><p>旅行定制师专用｜完整版：单词 · 句子 · 电话 · 实战 · 工作台｜欧洲词库扩展版</p></header>
+<div class="container">
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('vocab')">📇 单词</button>
+    <button class="tab-btn" onclick="switchTab('sentences')">✉️ 句子</button>
+    <button class="tab-btn" onclick="switchTab('phone')">📞 电话</button>
+    <button class="tab-btn" onclick="switchTab('live')">🔥 实战</button>
+    <button class="tab-btn" onclick="switchTab('pro')">🧠 工作台</button>
+    <button class="tab-btn" onclick="switchTab('quiz')">🎯 测试</button>
+  </div>
+
+  <div class="tab-content active" id="tab-vocab">
+    <div class="small">🔊 建议手机用 Chrome / Safari 打开；点“朗读”可听英文。</div>
+    <div class="search-box" style="margin:10px 0 12px;">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 查询：输入 Rome、罗马、酒店、Colosseum"
+        oninput="searchVocab()"
+        style="width:100%;padding:12px 14px;border-radius:14px;border:1px solid #e0cf99;background:#fff;font-size:15px;outline:none;"
+      />
+      <div class="search-actions">
+        <button class="copy" onclick="searchVocab()" style="background:#182033;color:#c9a84c;">🔍 查询</button>
+        <button class="copy" onclick="clearSearch()" style="background:#f2eadb;color:#182033;">清空</button>
+      </div>
+      <div id="searchHint" class="small" style="text-align:left;margin-top:6px;">当前搜索范围：全部词库</div>
+      <div id="searchResults" class="search-results"></div>
+    </div>
+    <div class="score"><div><b id="knowCount">0</b><br>已掌握</div><div><b id="againCount">0</b><br>再练</div><div><b id="totalCount">0</b><br>总数</div></div>
+    <div class="cat-scroll" id="catPills"></div>
+    <div class="small" id="cardCounter"></div>
+    <div class="card" id="flashcard"></div>
+  </div>
+
+  <div class="tab-content" id="tab-sentences"><div class="cat-scroll" id="sentCatPills"></div><div id="sentenceList"></div></div>
+  <div class="tab-content" id="tab-phone"><div class="cat-scroll" id="phoneCatPills"></div><div id="phoneList"></div></div>
+  <div class="tab-content" id="tab-live"><div class="cat-scroll" id="liveCatPills"></div><div id="liveList"></div></div>
+  <div class="tab-content" id="tab-pro"><div class="cat-scroll" id="proCatPills"></div><div id="proList"></div></div>
+  <div class="tab-content" id="tab-quiz"><div class="score"><div><b id="qCorrect">0</b><br>答对</div><div><b id="qWrong">0</b><br>答错</div></div><div id="quizArea"></div></div>
+</div>
+
+<script>
+const vocab = [
+{
+"en": "one-way ticket",
+"phonetic": "/wʌn weɪ ˈtɪkɪt/",
+"zh": "单程票",
+"example": "I'd like to book a one-way ticket to Rome.",
+"cat": "机票"
+},
+{
+"en": "round-trip ticket",
+"phonetic": "/raʊnd trɪp ˈtɪkɪt/",
+"zh": "往返票",
+"example": "Do you have round-trip tickets available?",
+"cat": "机票"
+},
+{
+"en": "connecting flight",
+"phonetic": "/kəˈnektɪŋ flaɪt/",
+"zh": "转机航班",
+"example": "What is the connecting flight number?",
+"cat": "机票"
+},
+{
+"en": "checked baggage",
+"phonetic": "/tʃekt ˈbæɡɪdʒ/",
+"zh": "托运行李",
+"example": "The checked baggage allowance is 23 kilograms.",
+"cat": "机票"
+},
+{
+"en": "carry-on luggage",
+"phonetic": "/ˈkæri ɑːn ˈlʌɡɪdʒ/",
+"zh": "随身行李",
+"example": "Only one carry-on luggage is allowed.",
+"cat": "机票"
+},
+{
+"en": "aisle seat",
+"phonetic": "/aɪl siːt/",
+"zh": "靠通道座位",
+"example": "My client prefers an aisle seat.",
+"cat": "机票"
+},
+{
+"en": "flight cancellation",
+"phonetic": "/flaɪt ˌkænsəˈleɪʃən/",
+"zh": "航班取消",
+"example": "We need to rebook due to a flight cancellation.",
+"cat": "机票"
+},
+{
+"en": "check-in",
+"phonetic": "/tʃek ɪn/",
+"zh": "办理入住",
+"example": "Could we check in now?",
+"cat": "酒店"
+},
+{
+"en": "check-out",
+"phonetic": "/tʃek aʊt/",
+"zh": "退房",
+"example": "What time is check-out?",
+"cat": "酒店"
+},
+{
+"en": "early check-in",
+"phonetic": "/ˈɜːrli tʃek ɪn/",
+"zh": "提前入住",
+"example": "Could you arrange early check-in for my clients?",
+"cat": "酒店"
+},
+{
+"en": "late check-out",
+"phonetic": "/leɪt tʃek aʊt/",
+"zh": "延迟退房",
+"example": "My clients need late check-out until 2 PM.",
+"cat": "酒店"
+},
+{
+"en": "complimentary breakfast",
+"phonetic": "/ˌkɑːmplɪˈmentəri ˈbrekfəst/",
+"zh": "免费早餐",
+"example": "Does the rate include complimentary breakfast?",
+"cat": "酒店"
+},
+{
+"en": "cancellation policy",
+"phonetic": "/ˌkænsəˈleɪʃən ˈpɑːləsi/",
+"zh": "取消政策",
+"example": "Could you confirm the cancellation policy?",
+"cat": "酒店"
+},
+{
+"en": "non-refundable",
+"phonetic": "/ˌnɑːn rɪˈfʌndəbl/",
+"zh": "不可退款",
+"example": "Please note this rate is non-refundable.",
+"cat": "酒店"
+},
+{
+"en": "room upgrade",
+"phonetic": "/ruːm ˈʌpɡreɪd/",
+"zh": "房型升级",
+"example": "Is a complimentary room upgrade possible?",
+"cat": "酒店"
+},
+{
+"en": "concierge",
+"phonetic": "/ˌkɑːnsiˈerʒ/",
+"zh": "礼宾部",
+"example": "Please contact the concierge for dinner reservations.",
+"cat": "酒店"
+},
+{
+"en": "admission ticket",
+"phonetic": "/ədˈmɪʃən ˈtɪkɪt/",
+"zh": "入场票",
+"example": "I need admission tickets for four adults.",
+"cat": "门票"
+},
+{
+"en": "skip-the-line ticket",
+"phonetic": "/skɪp ðə laɪn ˈtɪkɪt/",
+"zh": "免排队票",
+"example": "Do you offer skip-the-line tickets?",
+"cat": "门票"
+},
+{
+"en": "guided tour",
+"phonetic": "/ˈɡaɪdɪd tʊr/",
+"zh": "导览游",
+"example": "I'd like to book a private guided tour.",
+"cat": "门票"
+},
+{
+"en": "time slot",
+"phonetic": "/taɪm slɑːt/",
+"zh": "预约时段",
+"example": "Which time slots are available?",
+"cat": "门票"
+},
+{
+"en": "group booking",
+"phonetic": "/ɡruːp ˈbʊkɪŋ/",
+"zh": "团体预订",
+"example": "We'd like to make a group booking.",
+"cat": "门票"
+},
+{
+"en": "itinerary",
+"phonetic": "/aɪˈtɪnəreri/",
+"zh": "行程单/路线",
+"example": "I'll customize the itinerary based on your preferences.",
+"cat": "通用"
+},
+{
+"en": "tailored",
+"phonetic": "/ˈteɪlərd/",
+"zh": "量身定制的",
+"example": "This is a fully tailored travel experience.",
+"cat": "通用"
+},
+{
+"en": "peak season",
+"phonetic": "/piːk ˈsiːzən/",
+"zh": "旺季",
+"example": "Prices are higher during peak season.",
+"cat": "通用"
+},
+{
+"en": "travel insurance",
+"phonetic": "/ˈtrævəl ɪnˈʃʊrəns/",
+"zh": "旅行保险",
+"example": "I recommend purchasing travel insurance.",
+"cat": "通用"
+},
+{
+"en": "visa requirement",
+"phonetic": "/ˈviːzə rɪˈkwaɪərmənt/",
+"zh": "签证要求",
+"example": "Let me check the visa requirements.",
+"cat": "通用"
+},
+{
+"en": "deposit",
+"phonetic": "/dɪˈpɑːzɪt/",
+"zh": "订金/押金",
+"example": "A deposit is required to confirm the booking.",
+"cat": "通用"
+},
+{
+"en": "balance payment",
+"phonetic": "/ˈbæləns ˈpeɪmənt/",
+"zh": "尾款",
+"example": "The balance payment is due before departure.",
+"cat": "通用"
+},
+{
+"en": "Italy",
+"phonetic": "/ˈɪtəli/",
+"zh": "意大利",
+"example": "My client will travel to Italy.",
+"cat": "欧洲国家"
+},
+{
+"en": "France",
+"phonetic": "/fræns/",
+"zh": "法国",
+"example": "My client will travel to France.",
+"cat": "欧洲国家"
+},
+{
+"en": "Switzerland",
+"phonetic": "/ˈswɪtsərlənd/",
+"zh": "瑞士",
+"example": "My client will travel to Switzerland.",
+"cat": "欧洲国家"
+},
+{
+"en": "Germany",
+"phonetic": "/ˈdʒɜːrməni/",
+"zh": "德国",
+"example": "My client will travel to Germany.",
+"cat": "欧洲国家"
+},
+{
+"en": "Austria",
+"phonetic": "/ˈɔːstriə/",
+"zh": "奥地利",
+"example": "My client will travel to Austria.",
+"cat": "欧洲国家"
+},
+{
+"en": "Spain",
+"phonetic": "/speɪn/",
+"zh": "西班牙",
+"example": "My client will travel to Spain.",
+"cat": "欧洲国家"
+},
+{
+"en": "Portugal",
+"phonetic": "/ˈpɔːrtʃəɡəl/",
+"zh": "葡萄牙",
+"example": "My client will travel to Portugal.",
+"cat": "欧洲国家"
+},
+{
+"en": "Norway",
+"phonetic": "/ˈnɔːrweɪ/",
+"zh": "挪威",
+"example": "My client will travel to Norway.",
+"cat": "欧洲国家"
+},
+{
+"en": "Finland",
+"phonetic": "/ˈfɪnlənd/",
+"zh": "芬兰",
+"example": "My client will travel to Finland.",
+"cat": "欧洲国家"
+},
+{
+"en": "Iceland",
+"phonetic": "/ˈaɪslənd/",
+"zh": "冰岛",
+"example": "My client will travel to Iceland.",
+"cat": "欧洲国家"
+},
+{
+"en": "Denmark",
+"phonetic": "/ˈdenmɑːrk/",
+"zh": "丹麦",
+"example": "My client will travel to Denmark.",
+"cat": "欧洲国家"
+},
+{
+"en": "Sweden",
+"phonetic": "/ˈswiːdən/",
+"zh": "瑞典",
+"example": "My client will travel to Sweden.",
+"cat": "欧洲国家"
+},
+{
+"en": "Netherlands",
+"phonetic": "/ˈneðərləndz/",
+"zh": "荷兰",
+"example": "My client will travel to Netherlands.",
+"cat": "欧洲国家"
+},
+{
+"en": "Belgium",
+"phonetic": "/ˈbeldʒəm/",
+"zh": "比利时",
+"example": "My client will travel to Belgium.",
+"cat": "欧洲国家"
+},
+{
+"en": "Luxembourg",
+"phonetic": "/ˈlʌksəmbɜːrɡ/",
+"zh": "卢森堡",
+"example": "My client will travel to Luxembourg.",
+"cat": "欧洲国家"
+},
+{
+"en": "Czech Republic",
+"phonetic": "/tʃek rɪˈpʌblɪk/",
+"zh": "捷克",
+"example": "My client will travel to Czech Republic.",
+"cat": "欧洲国家"
+},
+{
+"en": "Hungary",
+"phonetic": "/ˈhʌŋɡəri/",
+"zh": "匈牙利",
+"example": "My client will travel to Hungary.",
+"cat": "欧洲国家"
+},
+{
+"en": "Greece",
+"phonetic": "/ɡriːs/",
+"zh": "希腊",
+"example": "My client will travel to Greece.",
+"cat": "欧洲国家"
+},
+{
+"en": "Turkey",
+"phonetic": "/ˈtɜːrki/",
+"zh": "土耳其",
+"example": "My client will travel to Turkey.",
+"cat": "欧洲国家"
+},
+{
+"en": "United Kingdom",
+"phonetic": "/juːˈnaɪtɪd ˈkɪŋdəm/",
+"zh": "英国",
+"example": "My client will travel to United Kingdom.",
+"cat": "欧洲国家"
+},
+{
+"en": "Ireland",
+"phonetic": "/ˈaɪərlənd/",
+"zh": "爱尔兰",
+"example": "My client will travel to Ireland.",
+"cat": "欧洲国家"
+},
+{
+"en": "Croatia",
+"phonetic": "/kroʊˈeɪʃə/",
+"zh": "克罗地亚",
+"example": "My client will travel to Croatia.",
+"cat": "欧洲国家"
+},
+{
+"en": "Slovenia",
+"phonetic": "/sloʊˈviːniə/",
+"zh": "斯洛文尼亚",
+"example": "My client will travel to Slovenia.",
+"cat": "欧洲国家"
+},
+{
+"en": "Poland",
+"phonetic": "/ˈpoʊlənd/",
+"zh": "波兰",
+"example": "My client will travel to Poland.",
+"cat": "欧洲国家"
+},
+{
+"en": "Estonia",
+"phonetic": "/eˈstoʊniə/",
+"zh": "爱沙尼亚",
+"example": "My client will travel to Estonia.",
+"cat": "欧洲国家"
+},
+{
+"en": "Latvia",
+"phonetic": "/ˈlætviə/",
+"zh": "拉脱维亚",
+"example": "My client will travel to Latvia.",
+"cat": "欧洲国家"
+},
+{
+"en": "Lithuania",
+"phonetic": "/ˌlɪθuˈeɪniə/",
+"zh": "立陶宛",
+"example": "My client will travel to Lithuania.",
+"cat": "欧洲国家"
+},
+{
+"en": "Malta",
+"phonetic": "/ˈmɔːltə/",
+"zh": "马耳他",
+"example": "My client will travel to Malta.",
+"cat": "欧洲国家"
+},
+{
+"en": "Monaco",
+"phonetic": "/ˈmɑːnəkoʊ/",
+"zh": "摩纳哥",
+"example": "My client will travel to Monaco.",
+"cat": "欧洲国家"
+},
+{
+"en": "Liechtenstein",
+"phonetic": "/ˈlɪktənstaɪn/",
+"zh": "列支敦士登",
+"example": "My client will travel to Liechtenstein.",
+"cat": "欧洲国家"
+},
+{
+"en": "Slovakia",
+"phonetic": "/sloʊˈvɑːkiə/",
+"zh": "斯洛伐克",
+"example": "My client will travel to Slovakia.",
+"cat": "欧洲国家"
+},
+{
+"en": "Romania",
+"phonetic": "/roʊˈmeɪniə/",
+"zh": "罗马尼亚",
+"example": "My client will travel to Romania.",
+"cat": "欧洲国家"
+},
+{
+"en": "Rome",
+"phonetic": "/roʊm/",
+"zh": "罗马",
+"example": "They will stay in Rome.",
+"cat": "欧洲城市"
+},
+{
+"en": "Florence",
+"phonetic": "/ˈflɔːrəns/",
+"zh": "佛罗伦萨",
+"example": "They will stay in Florence.",
+"cat": "欧洲城市"
+},
+{
+"en": "Venice",
+"phonetic": "/ˈvenɪs/",
+"zh": "威尼斯",
+"example": "They will stay in Venice.",
+"cat": "欧洲城市"
+},
+{
+"en": "Milan",
+"phonetic": "/mɪˈlæn/",
+"zh": "米兰",
+"example": "They will stay in Milan.",
+"cat": "欧洲城市"
+},
+{
+"en": "Naples",
+"phonetic": "/ˈneɪpəlz/",
+"zh": "那不勒斯",
+"example": "They will stay in Naples.",
+"cat": "欧洲城市"
+},
+{
+"en": "Sorrento",
+"phonetic": "/ /",
+"zh": "索伦托",
+"example": "They will stay in Sorrento.",
+"cat": "欧洲城市"
+},
+{
+"en": "Amalfi",
+"phonetic": "/ /",
+"zh": "阿马尔菲",
+"example": "They will stay in Amalfi.",
+"cat": "欧洲城市"
+},
+{
+"en": "Positano",
+"phonetic": "/ /",
+"zh": "波西塔诺",
+"example": "They will stay in Positano.",
+"cat": "欧洲城市"
+},
+{
+"en": "Pienza",
+"phonetic": "/ /",
+"zh": "皮恩扎",
+"example": "They will stay in Pienza.",
+"cat": "欧洲城市"
+},
+{
+"en": "Siena",
+"phonetic": "/ /",
+"zh": "锡耶纳",
+"example": "They will stay in Siena.",
+"cat": "欧洲城市"
+},
+{
+"en": "Pisa",
+"phonetic": "/ /",
+"zh": "比萨",
+"example": "They will stay in Pisa.",
+"cat": "欧洲城市"
+},
+{
+"en": "Verona",
+"phonetic": "/ /",
+"zh": "维罗纳",
+"example": "They will stay in Verona.",
+"cat": "欧洲城市"
+},
+{
+"en": "Bologna",
+"phonetic": "/ /",
+"zh": "博洛尼亚",
+"example": "They will stay in Bologna.",
+"cat": "欧洲城市"
+},
+{
+"en": "Turin",
+"phonetic": "/ /",
+"zh": "都灵",
+"example": "They will stay in Turin.",
+"cat": "欧洲城市"
+},
+{
+"en": "Palermo",
+"phonetic": "/ /",
+"zh": "巴勒莫",
+"example": "They will stay in Palermo.",
+"cat": "欧洲城市"
+},
+{
+"en": "Catania",
+"phonetic": "/ /",
+"zh": "卡塔尼亚",
+"example": "They will stay in Catania.",
+"cat": "欧洲城市"
+},
+{
+"en": "Paris",
+"phonetic": "/ˈpærɪs/",
+"zh": "巴黎",
+"example": "They will stay in Paris.",
+"cat": "欧洲城市"
+},
+{
+"en": "Nice",
+"phonetic": "/niːs/",
+"zh": "尼斯",
+"example": "They will stay in Nice.",
+"cat": "欧洲城市"
+},
+{
+"en": "Cannes",
+"phonetic": "/kæn/",
+"zh": "戛纳",
+"example": "They will stay in Cannes.",
+"cat": "欧洲城市"
+},
+{
+"en": "Marseille",
+"phonetic": "/mɑːrˈseɪ/",
+"zh": "马赛",
+"example": "They will stay in Marseille.",
+"cat": "欧洲城市"
+},
+{
+"en": "Lyon",
+"phonetic": "/liˈoʊn/",
+"zh": "里昂",
+"example": "They will stay in Lyon.",
+"cat": "欧洲城市"
+},
+{
+"en": "Avignon",
+"phonetic": "/ /",
+"zh": "阿维尼翁",
+"example": "They will stay in Avignon.",
+"cat": "欧洲城市"
+},
+{
+"en": "Strasbourg",
+"phonetic": "/ /",
+"zh": "斯特拉斯堡",
+"example": "They will stay in Strasbourg.",
+"cat": "欧洲城市"
+},
+{
+"en": "Colmar",
+"phonetic": "/ /",
+"zh": "科尔马",
+"example": "They will stay in Colmar.",
+"cat": "欧洲城市"
+},
+{
+"en": "Bordeaux",
+"phonetic": "/ /",
+"zh": "波尔多",
+"example": "They will stay in Bordeaux.",
+"cat": "欧洲城市"
+},
+{
+"en": "Toulouse",
+"phonetic": "/ /",
+"zh": "图卢兹",
+"example": "They will stay in Toulouse.",
+"cat": "欧洲城市"
+},
+{
+"en": "Annecy",
+"phonetic": "/ /",
+"zh": "安纳西",
+"example": "They will stay in Annecy.",
+"cat": "欧洲城市"
+},
+{
+"en": "Chamonix",
+"phonetic": "/ /",
+"zh": "夏慕尼",
+"example": "They will stay in Chamonix.",
+"cat": "欧洲城市"
+},
+{
+"en": "Zurich",
+"phonetic": "/ˈzʊrɪk/",
+"zh": "苏黎世",
+"example": "They will stay in Zurich.",
+"cat": "欧洲城市"
+},
+{
+"en": "Lucerne",
+"phonetic": "/luːˈsɜːrn/",
+"zh": "卢塞恩",
+"example": "They will stay in Lucerne.",
+"cat": "欧洲城市"
+},
+{
+"en": "Interlaken",
+"phonetic": "/ˌɪntərˈlɑːkən/",
+"zh": "因特拉肯",
+"example": "They will stay in Interlaken.",
+"cat": "欧洲城市"
+},
+{
+"en": "Zermatt",
+"phonetic": "/ˈzɜːrmæt/",
+"zh": "采尔马特",
+"example": "They will stay in Zermatt.",
+"cat": "欧洲城市"
+},
+{
+"en": "Geneva",
+"phonetic": "/dʒəˈniːvə/",
+"zh": "日内瓦",
+"example": "They will stay in Geneva.",
+"cat": "欧洲城市"
+},
+{
+"en": "Lausanne",
+"phonetic": "/ /",
+"zh": "洛桑",
+"example": "They will stay in Lausanne.",
+"cat": "欧洲城市"
+},
+{
+"en": "Montreux",
+"phonetic": "/ /",
+"zh": "蒙特勒",
+"example": "They will stay in Montreux.",
+"cat": "欧洲城市"
+},
+{
+"en": "Bern",
+"phonetic": "/ /",
+"zh": "伯尔尼",
+"example": "They will stay in Bern.",
+"cat": "欧洲城市"
+},
+{
+"en": "Grindelwald",
+"phonetic": "/ /",
+"zh": "格林德瓦",
+"example": "They will stay in Grindelwald.",
+"cat": "欧洲城市"
+},
+{
+"en": "Lugano",
+"phonetic": "/ /",
+"zh": "卢加诺",
+"example": "They will stay in Lugano.",
+"cat": "欧洲城市"
+},
+{
+"en": "Munich",
+"phonetic": "/ˈmjuːnɪk/",
+"zh": "慕尼黑",
+"example": "They will stay in Munich.",
+"cat": "欧洲城市"
+},
+{
+"en": "Frankfurt",
+"phonetic": "/ˈfræŋkfərt/",
+"zh": "法兰克福",
+"example": "They will stay in Frankfurt.",
+"cat": "欧洲城市"
+},
+{
+"en": "Berlin",
+"phonetic": "/bɜːrˈlɪn/",
+"zh": "柏林",
+"example": "They will stay in Berlin.",
+"cat": "欧洲城市"
+},
+{
+"en": "Cologne",
+"phonetic": "/kəˈloʊn/",
+"zh": "科隆",
+"example": "They will stay in Cologne.",
+"cat": "欧洲城市"
+},
+{
+"en": "Hamburg",
+"phonetic": "/ /",
+"zh": "汉堡",
+"example": "They will stay in Hamburg.",
+"cat": "欧洲城市"
+},
+{
+"en": "Heidelberg",
+"phonetic": "/ /",
+"zh": "海德堡",
+"example": "They will stay in Heidelberg.",
+"cat": "欧洲城市"
+},
+{
+"en": "Rothenburg ob der Tauber",
+"phonetic": "/ /",
+"zh": "罗滕堡",
+"example": "They will stay in Rothenburg ob der Tauber.",
+"cat": "欧洲城市"
+},
+{
+"en": "Füssen",
+"phonetic": "/ /",
+"zh": "福森",
+"example": "They will stay in Füssen.",
+"cat": "欧洲城市"
+},
+{
+"en": "Stuttgart",
+"phonetic": "/ /",
+"zh": "斯图加特",
+"example": "They will stay in Stuttgart.",
+"cat": "欧洲城市"
+},
+{
+"en": "Dresden",
+"phonetic": "/ /",
+"zh": "德累斯顿",
+"example": "They will stay in Dresden.",
+"cat": "欧洲城市"
+},
+{
+"en": "Vienna",
+"phonetic": "/viˈenə/",
+"zh": "维也纳",
+"example": "They will stay in Vienna.",
+"cat": "欧洲城市"
+},
+{
+"en": "Salzburg",
+"phonetic": "/ˈsɔːlzbɜːrɡ/",
+"zh": "萨尔茨堡",
+"example": "They will stay in Salzburg.",
+"cat": "欧洲城市"
+},
+{
+"en": "Innsbruck",
+"phonetic": "/ /",
+"zh": "因斯布鲁克",
+"example": "They will stay in Innsbruck.",
+"cat": "欧洲城市"
+},
+{
+"en": "Hallstatt",
+"phonetic": "/ /",
+"zh": "哈尔施塔特",
+"example": "They will stay in Hallstatt.",
+"cat": "欧洲城市"
+},
+{
+"en": "Prague",
+"phonetic": "/prɑːɡ/",
+"zh": "布拉格",
+"example": "They will stay in Prague.",
+"cat": "欧洲城市"
+},
+{
+"en": "Budapest",
+"phonetic": "/ˈbuːdəpest/",
+"zh": "布达佩斯",
+"example": "They will stay in Budapest.",
+"cat": "欧洲城市"
+},
+{
+"en": "Amsterdam",
+"phonetic": "/ˈæmstərdæm/",
+"zh": "阿姆斯特丹",
+"example": "They will stay in Amsterdam.",
+"cat": "欧洲城市"
+},
+{
+"en": "Brussels",
+"phonetic": "/ /",
+"zh": "布鲁塞尔",
+"example": "They will stay in Brussels.",
+"cat": "欧洲城市"
+},
+{
+"en": "Bruges",
+"phonetic": "/ /",
+"zh": "布鲁日",
+"example": "They will stay in Bruges.",
+"cat": "欧洲城市"
+},
+{
+"en": "Copenhagen",
+"phonetic": "/ˌkoʊpənˈheɪɡən/",
+"zh": "哥本哈根",
+"example": "They will stay in Copenhagen.",
+"cat": "欧洲城市"
+},
+{
+"en": "Stockholm",
+"phonetic": "/ˈstɑːkhoʊm/",
+"zh": "斯德哥尔摩",
+"example": "They will stay in Stockholm.",
+"cat": "欧洲城市"
+},
+{
+"en": "Oslo",
+"phonetic": "/ˈɑːzloʊ/",
+"zh": "奥斯陆",
+"example": "They will stay in Oslo.",
+"cat": "欧洲城市"
+},
+{
+"en": "Bergen",
+"phonetic": "/ˈbɜːrɡən/",
+"zh": "卑尔根",
+"example": "They will stay in Bergen.",
+"cat": "欧洲城市"
+},
+{
+"en": "Tromsø",
+"phonetic": "/ˈtrʊmsø/",
+"zh": "特罗姆瑟",
+"example": "They will stay in Tromsø.",
+"cat": "欧洲城市"
+},
+{
+"en": "Svolvær",
+"phonetic": "/ /",
+"zh": "斯沃尔韦尔",
+"example": "They will stay in Svolvær.",
+"cat": "欧洲城市"
+},
+{
+"en": "Helsinki",
+"phonetic": "/ˈhelsɪŋki/",
+"zh": "赫尔辛基",
+"example": "They will stay in Helsinki.",
+"cat": "欧洲城市"
+},
+{
+"en": "Reykjavik",
+"phonetic": "/ˈreɪkjəvɪk/",
+"zh": "雷克雅未克",
+"example": "They will stay in Reykjavik.",
+"cat": "欧洲城市"
+},
+{
+"en": "Barcelona",
+"phonetic": "/ˌbɑːrsəˈloʊnə/",
+"zh": "巴塞罗那",
+"example": "They will stay in Barcelona.",
+"cat": "欧洲城市"
+},
+{
+"en": "Madrid",
+"phonetic": "/məˈdrɪd/",
+"zh": "马德里",
+"example": "They will stay in Madrid.",
+"cat": "欧洲城市"
+},
+{
+"en": "Seville",
+"phonetic": "/ /",
+"zh": "塞维利亚",
+"example": "They will stay in Seville.",
+"cat": "欧洲城市"
+},
+{
+"en": "Granada",
+"phonetic": "/ /",
+"zh": "格拉纳达",
+"example": "They will stay in Granada.",
+"cat": "欧洲城市"
+},
+{
+"en": "Lisbon",
+"phonetic": "/ˈlɪzbən/",
+"zh": "里斯本",
+"example": "They will stay in Lisbon.",
+"cat": "欧洲城市"
+},
+{
+"en": "Porto",
+"phonetic": "/ /",
+"zh": "波尔图",
+"example": "They will stay in Porto.",
+"cat": "欧洲城市"
+},
+{
+"en": "Athens",
+"phonetic": "/ /",
+"zh": "雅典",
+"example": "They will stay in Athens.",
+"cat": "欧洲城市"
+},
+{
+"en": "Santorini",
+"phonetic": "/ /",
+"zh": "圣托里尼",
+"example": "They will stay in Santorini.",
+"cat": "欧洲城市"
+},
+{
+"en": "London",
+"phonetic": "/ˈlʌndən/",
+"zh": "伦敦",
+"example": "They will stay in London.",
+"cat": "欧洲城市"
+},
+{
+"en": "Edinburgh",
+"phonetic": "/ˈedɪnbərə/",
+"zh": "爱丁堡",
+"example": "They will stay in Edinburgh.",
+"cat": "欧洲城市"
+},
+{
+"en": "Dublin",
+"phonetic": "/ /",
+"zh": "都柏林",
+"example": "They will stay in Dublin.",
+"cat": "欧洲城市"
+},
+{
+"en": "Colosseum",
+"phonetic": "/ˌkɑːləˈsiːəm/",
+"zh": "罗马斗兽场",
+"example": "They will visit Colosseum.",
+"cat": "欧洲景点"
+},
+{
+"en": "Roman Forum",
+"phonetic": "/ /",
+"zh": "古罗马广场",
+"example": "They will visit Roman Forum.",
+"cat": "欧洲景点"
+},
+{
+"en": "Trevi Fountain",
+"phonetic": "/ /",
+"zh": "特莱维喷泉/许愿池",
+"example": "They will visit Trevi Fountain.",
+"cat": "欧洲景点"
+},
+{
+"en": "Pantheon",
+"phonetic": "/ /",
+"zh": "万神殿",
+"example": "They will visit Pantheon.",
+"cat": "欧洲景点"
+},
+{
+"en": "Spanish Steps",
+"phonetic": "/ /",
+"zh": "西班牙台阶",
+"example": "They will visit Spanish Steps.",
+"cat": "欧洲景点"
+},
+{
+"en": "Vatican Museums",
+"phonetic": "/ˈvætɪkən mjuˈziːəmz/",
+"zh": "梵蒂冈博物馆",
+"example": "They will visit Vatican Museums.",
+"cat": "欧洲景点"
+},
+{
+"en": "Sistine Chapel",
+"phonetic": "/ˈsɪstiːn ˈtʃæpəl/",
+"zh": "西斯廷教堂",
+"example": "They will visit Sistine Chapel.",
+"cat": "欧洲景点"
+},
+{
+"en": "St. Peter's Basilica",
+"phonetic": "/ /",
+"zh": "圣彼得大教堂",
+"example": "They will visit St. Peter's Basilica.",
+"cat": "欧洲景点"
+},
+{
+"en": "Uffizi Gallery",
+"phonetic": "/ /",
+"zh": "乌菲兹美术馆",
+"example": "They will visit Uffizi Gallery.",
+"cat": "欧洲景点"
+},
+{
+"en": "Accademia Gallery",
+"phonetic": "/ /",
+"zh": "学院美术馆",
+"example": "They will visit Accademia Gallery.",
+"cat": "欧洲景点"
+},
+{
+"en": "Florence Cathedral",
+"phonetic": "/ /",
+"zh": "佛罗伦萨圣母百花大教堂",
+"example": "They will visit Florence Cathedral.",
+"cat": "欧洲景点"
+},
+{
+"en": "Ponte Vecchio",
+"phonetic": "/ /",
+"zh": "老桥",
+"example": "They will visit Ponte Vecchio.",
+"cat": "欧洲景点"
+},
+{
+"en": "Piazzale Michelangelo",
+"phonetic": "/ /",
+"zh": "米开朗琪罗广场",
+"example": "They will visit Piazzale Michelangelo.",
+"cat": "欧洲景点"
+},
+{
+"en": "Leaning Tower of Pisa",
+"phonetic": "/ /",
+"zh": "比萨斜塔",
+"example": "They will visit Leaning Tower of Pisa.",
+"cat": "欧洲景点"
+},
+{
+"en": "St. Mark's Square",
+"phonetic": "/ /",
+"zh": "圣马可广场",
+"example": "They will visit St. Mark's Square.",
+"cat": "欧洲景点"
+},
+{
+"en": "Doge's Palace",
+"phonetic": "/ /",
+"zh": "总督宫",
+"example": "They will visit Doge's Palace.",
+"cat": "欧洲景点"
+},
+{
+"en": "Rialto Bridge",
+"phonetic": "/ /",
+"zh": "里亚托桥",
+"example": "They will visit Rialto Bridge.",
+"cat": "欧洲景点"
+},
+{
+"en": "Grand Canal",
+"phonetic": "/ /",
+"zh": "大运河",
+"example": "They will visit Grand Canal.",
+"cat": "欧洲景点"
+},
+{
+"en": "Milan Cathedral",
+"phonetic": "/ /",
+"zh": "米兰大教堂",
+"example": "They will visit Milan Cathedral.",
+"cat": "欧洲景点"
+},
+{
+"en": "Galleria Vittorio Emanuele II",
+"phonetic": "/ /",
+"zh": "埃马努埃莱二世长廊",
+"example": "They will visit Galleria Vittorio Emanuele II.",
+"cat": "欧洲景点"
+},
+{
+"en": "Lake Como",
+"phonetic": "/ /",
+"zh": "科莫湖",
+"example": "They will visit Lake Como.",
+"cat": "欧洲景点"
+},
+{
+"en": "Pompeii",
+"phonetic": "/ /",
+"zh": "庞贝古城",
+"example": "They will visit Pompeii.",
+"cat": "欧洲景点"
+},
+{
+"en": "Mount Vesuvius",
+"phonetic": "/ /",
+"zh": "维苏威火山",
+"example": "They will visit Mount Vesuvius.",
+"cat": "欧洲景点"
+},
+{
+"en": "Amalfi Coast",
+"phonetic": "/ /",
+"zh": "阿马尔菲海岸",
+"example": "They will visit Amalfi Coast.",
+"cat": "欧洲景点"
+},
+{
+"en": "Positano",
+"phonetic": "/ /",
+"zh": "波西塔诺",
+"example": "They will visit Positano.",
+"cat": "欧洲景点"
+},
+{
+"en": "Blue Grotto",
+"phonetic": "/ /",
+"zh": "蓝洞",
+"example": "They will visit Blue Grotto.",
+"cat": "欧洲景点"
+},
+{
+"en": "Eiffel Tower",
+"phonetic": "/ˈaɪfəl ˈtaʊər/",
+"zh": "埃菲尔铁塔",
+"example": "They will visit Eiffel Tower.",
+"cat": "欧洲景点"
+},
+{
+"en": "Louvre Museum",
+"phonetic": "/ˈluːvr mjuˈziːəm/",
+"zh": "卢浮宫",
+"example": "They will visit Louvre Museum.",
+"cat": "欧洲景点"
+},
+{
+"en": "Notre-Dame Cathedral",
+"phonetic": "/ /",
+"zh": "巴黎圣母院",
+"example": "They will visit Notre-Dame Cathedral.",
+"cat": "欧洲景点"
+},
+{
+"en": "Arc de Triomphe",
+"phonetic": "/ /",
+"zh": "凯旋门",
+"example": "They will visit Arc de Triomphe.",
+"cat": "欧洲景点"
+},
+{
+"en": "Champs-Élysées",
+"phonetic": "/ /",
+"zh": "香榭丽舍大街",
+"example": "They will visit Champs-Élysées.",
+"cat": "欧洲景点"
+},
+{
+"en": "Sacré-Cœur Basilica",
+"phonetic": "/ /",
+"zh": "圣心大教堂",
+"example": "They will visit Sacré-Cœur Basilica.",
+"cat": "欧洲景点"
+},
+{
+"en": "Palace of Versailles",
+"phonetic": "/ /",
+"zh": "凡尔赛宫",
+"example": "They will visit Palace of Versailles.",
+"cat": "欧洲景点"
+},
+{
+"en": "Musée d'Orsay",
+"phonetic": "/ /",
+"zh": "奥赛博物馆",
+"example": "They will visit Musée d'Orsay.",
+"cat": "欧洲景点"
+},
+{
+"en": "Mont Saint-Michel",
+"phonetic": "/ /",
+"zh": "圣米歇尔山",
+"example": "They will visit Mont Saint-Michel.",
+"cat": "欧洲景点"
+},
+{
+"en": "Château de Chambord",
+"phonetic": "/ /",
+"zh": "香波堡",
+"example": "They will visit Château de Chambord.",
+"cat": "欧洲景点"
+},
+{
+"en": "Pont du Gard",
+"phonetic": "/ /",
+"zh": "加尔桥",
+"example": "They will visit Pont du Gard.",
+"cat": "欧洲景点"
+},
+{
+"en": "Promenade des Anglais",
+"phonetic": "/ /",
+"zh": "英国人散步大道",
+"example": "They will visit Promenade des Anglais.",
+"cat": "欧洲景点"
+},
+{
+"en": "Jungfraujoch",
+"phonetic": "/ˈjʊŋfraʊjɔːk/",
+"zh": "少女峰",
+"example": "They will visit Jungfraujoch.",
+"cat": "欧洲景点"
+},
+{
+"en": "Matterhorn",
+"phonetic": "/ˈmætərhɔːrn/",
+"zh": "马特洪峰",
+"example": "They will visit Matterhorn.",
+"cat": "欧洲景点"
+},
+{
+"en": "Mount Rigi",
+"phonetic": "/ /",
+"zh": "瑞吉山",
+"example": "They will visit Mount Rigi.",
+"cat": "欧洲景点"
+},
+{
+"en": "Mount Pilatus",
+"phonetic": "/ /",
+"zh": "皮拉图斯山",
+"example": "They will visit Mount Pilatus.",
+"cat": "欧洲景点"
+},
+{
+"en": "Chapel Bridge",
+"phonetic": "/ /",
+"zh": "卡佩尔廊桥",
+"example": "They will visit Chapel Bridge.",
+"cat": "欧洲景点"
+},
+{
+"en": "Lake Geneva",
+"phonetic": "/ /",
+"zh": "日内瓦湖",
+"example": "They will visit Lake Geneva.",
+"cat": "欧洲景点"
+},
+{
+"en": "Rhine Falls",
+"phonetic": "/ /",
+"zh": "莱茵瀑布",
+"example": "They will visit Rhine Falls.",
+"cat": "欧洲景点"
+},
+{
+"en": "Schilthorn",
+"phonetic": "/ /",
+"zh": "雪朗峰",
+"example": "They will visit Schilthorn.",
+"cat": "欧洲景点"
+},
+{
+"en": "First Cliff Walk",
+"phonetic": "/ /",
+"zh": "菲斯特悬崖步道",
+"example": "They will visit First Cliff Walk.",
+"cat": "欧洲景点"
+},
+{
+"en": "GoldenPass Express",
+"phonetic": "/ /",
+"zh": "金色山口快车",
+"example": "They will visit GoldenPass Express.",
+"cat": "欧洲景点"
+},
+{
+"en": "Bern Old Town",
+"phonetic": "/ /",
+"zh": "伯尔尼老城",
+"example": "They will visit Bern Old Town.",
+"cat": "欧洲景点"
+},
+{
+"en": "Neuschwanstein Castle",
+"phonetic": "/nɔɪˈʃvɑːnʃtaɪn ˈkæsəl/",
+"zh": "新天鹅堡",
+"example": "They will visit Neuschwanstein Castle.",
+"cat": "欧洲景点"
+},
+{
+"en": "Cologne Cathedral",
+"phonetic": "/ /",
+"zh": "科隆大教堂",
+"example": "They will visit Cologne Cathedral.",
+"cat": "欧洲景点"
+},
+{
+"en": "Brandenburg Gate",
+"phonetic": "/ /",
+"zh": "勃兰登堡门",
+"example": "They will visit Brandenburg Gate.",
+"cat": "欧洲景点"
+},
+{
+"en": "Berlin Wall Memorial",
+"phonetic": "/ /",
+"zh": "柏林墙纪念馆",
+"example": "They will visit Berlin Wall Memorial.",
+"cat": "欧洲景点"
+},
+{
+"en": "Black Forest",
+"phonetic": "/blæk ˈfɔːrɪst/",
+"zh": "黑森林",
+"example": "They will visit Black Forest.",
+"cat": "欧洲景点"
+},
+{
+"en": "Heidelberg Castle",
+"phonetic": "/ /",
+"zh": "海德堡城堡",
+"example": "They will visit Heidelberg Castle.",
+"cat": "欧洲景点"
+},
+{
+"en": "Marienplatz",
+"phonetic": "/ /",
+"zh": "玛利亚广场",
+"example": "They will visit Marienplatz.",
+"cat": "欧洲景点"
+},
+{
+"en": "BMW Museum",
+"phonetic": "/ /",
+"zh": "宝马博物馆",
+"example": "They will visit BMW Museum.",
+"cat": "欧洲景点"
+},
+{
+"en": "Nymphenburg Palace",
+"phonetic": "/ /",
+"zh": "宁芬堡宫",
+"example": "They will visit Nymphenburg Palace.",
+"cat": "欧洲景点"
+},
+{
+"en": "Zugspitze",
+"phonetic": "/ /",
+"zh": "楚格峰",
+"example": "They will visit Zugspitze.",
+"cat": "欧洲景点"
+},
+{
+"en": "Schonbrunn Palace",
+"phonetic": "/ /",
+"zh": "美泉宫",
+"example": "They will visit Schonbrunn Palace.",
+"cat": "欧洲景点"
+},
+{
+"en": "Belvedere Palace",
+"phonetic": "/ /",
+"zh": "美景宫",
+"example": "They will visit Belvedere Palace.",
+"cat": "欧洲景点"
+},
+{
+"en": "Vienna State Opera",
+"phonetic": "/ /",
+"zh": "维也纳国家歌剧院",
+"example": "They will visit Vienna State Opera.",
+"cat": "欧洲景点"
+},
+{
+"en": "Hallstatt Lake",
+"phonetic": "/ /",
+"zh": "哈尔施塔特湖",
+"example": "They will visit Hallstatt Lake.",
+"cat": "欧洲景点"
+},
+{
+"en": "Hohensalzburg Fortress",
+"phonetic": "/ /",
+"zh": "萨尔茨堡城堡",
+"example": "They will visit Hohensalzburg Fortress.",
+"cat": "欧洲景点"
+},
+{
+"en": "Charles Bridge",
+"phonetic": "/ /",
+"zh": "查理大桥",
+"example": "They will visit Charles Bridge.",
+"cat": "欧洲景点"
+},
+{
+"en": "Prague Castle",
+"phonetic": "/ /",
+"zh": "布拉格城堡",
+"example": "They will visit Prague Castle.",
+"cat": "欧洲景点"
+},
+{
+"en": "Fisherman's Bastion",
+"phonetic": "/ /",
+"zh": "渔人堡",
+"example": "They will visit Fisherman's Bastion.",
+"cat": "欧洲景点"
+},
+{
+"en": "Buda Castle",
+"phonetic": "/ /",
+"zh": "布达城堡",
+"example": "They will visit Buda Castle.",
+"cat": "欧洲景点"
+},
+{
+"en": "Sagrada Familia",
+"phonetic": "/səˈɡrɑːdə fəˈmɪliə/",
+"zh": "圣家堂",
+"example": "They will visit Sagrada Familia.",
+"cat": "欧洲景点"
+},
+{
+"en": "Park Güell",
+"phonetic": "/ /",
+"zh": "古埃尔公园",
+"example": "They will visit Park Güell.",
+"cat": "欧洲景点"
+},
+{
+"en": "Alhambra",
+"phonetic": "/ /",
+"zh": "阿尔罕布拉宫",
+"example": "They will visit Alhambra.",
+"cat": "欧洲景点"
+},
+{
+"en": "Plaza de España",
+"phonetic": "/ /",
+"zh": "西班牙广场",
+"example": "They will visit Plaza de España.",
+"cat": "欧洲景点"
+},
+{
+"en": "Belém Tower",
+"phonetic": "/ /",
+"zh": "贝伦塔",
+"example": "They will visit Belém Tower.",
+"cat": "欧洲景点"
+},
+{
+"en": "Jerónimos Monastery",
+"phonetic": "/ /",
+"zh": "热罗尼莫斯修道院",
+"example": "They will visit Jerónimos Monastery.",
+"cat": "欧洲景点"
+},
+{
+"en": "Ribeira District",
+"phonetic": "/ /",
+"zh": "里贝拉区",
+"example": "They will visit Ribeira District.",
+"cat": "欧洲景点"
+},
+{
+"en": "Acropolis",
+"phonetic": "/əˈkrɑːpəlɪs/",
+"zh": "雅典卫城",
+"example": "They will visit Acropolis.",
+"cat": "欧洲景点"
+},
+{
+"en": "Oia",
+"phonetic": "/ /",
+"zh": "伊亚小镇",
+"example": "They will visit Oia.",
+"cat": "欧洲景点"
+},
+{
+"en": "Big Ben",
+"phonetic": "/ /",
+"zh": "大本钟",
+"example": "They will visit Big Ben.",
+"cat": "欧洲景点"
+},
+{
+"en": "Tower Bridge",
+"phonetic": "/ /",
+"zh": "伦敦塔桥",
+"example": "They will visit Tower Bridge.",
+"cat": "欧洲景点"
+},
+{
+"en": "British Museum",
+"phonetic": "/ /",
+"zh": "大英博物馆",
+"example": "They will visit British Museum.",
+"cat": "欧洲景点"
+},
+{
+"en": "Edinburgh Castle",
+"phonetic": "/ /",
+"zh": "爱丁堡城堡",
+"example": "They will visit Edinburgh Castle.",
+"cat": "欧洲景点"
+},
+{
+"en": "Bryggen",
+"phonetic": "/ /",
+"zh": "布吕根码头",
+"example": "They will visit Bryggen.",
+"cat": "欧洲景点"
+},
+{
+"en": "Geirangerfjord",
+"phonetic": "/ /",
+"zh": "盖朗厄尔峡湾",
+"example": "They will visit Geirangerfjord.",
+"cat": "欧洲景点"
+},
+{
+"en": "Nærøyfjord",
+"phonetic": "/ /",
+"zh": "纳柔依峡湾",
+"example": "They will visit Nærøyfjord.",
+"cat": "欧洲景点"
+},
+{
+"en": "Lofoten Islands",
+"phonetic": "/ /",
+"zh": "罗弗敦群岛",
+"example": "They will visit Lofoten Islands.",
+"cat": "欧洲景点"
+},
+{
+"en": "Fjellheisen",
+"phonetic": "/ /",
+"zh": "特罗姆瑟缆车",
+"example": "They will visit Fjellheisen.",
+"cat": "欧洲景点"
+},
+{
+"en": "Blue Lagoon",
+"phonetic": "/bluː ləˈɡuːn/",
+"zh": "蓝湖温泉",
+"example": "They will visit Blue Lagoon.",
+"cat": "欧洲景点"
+},
+{
+"en": "Golden Circle",
+"phonetic": "/ /",
+"zh": "黄金圈",
+"example": "They will visit Golden Circle.",
+"cat": "欧洲景点"
+},
+{
+"en": "Seljalandsfoss",
+"phonetic": "/ /",
+"zh": "塞里雅兰瀑布",
+"example": "They will visit Seljalandsfoss.",
+"cat": "欧洲景点"
+},
+{
+"en": "Jökulsárlón Glacier Lagoon",
+"phonetic": "/ /",
+"zh": "杰古沙龙冰河湖",
+"example": "They will visit Jökulsárlón Glacier Lagoon.",
+"cat": "欧洲景点"
+},
+{
+"en": "Northern Lights",
+"phonetic": "/ /",
+"zh": "北极光",
+"example": "They will visit Northern Lights.",
+"cat": "欧洲景点"
+},
+{"en":"proposal","phonetic":"/prəˈpoʊzəl/","zh":"提案/方案","example":"Please find the proposal attached.","cat":"商务英语"},
+{"en":"quotation","phonetic":"/kwoʊˈteɪʃən/","zh":"报价单","example":"Could you send me a quotation by Friday?","cat":"商务英语"},
+{"en":"quote","phonetic":"/kwoʊt/","zh":"报价","example":"Please provide a quote for 10 rooms.","cat":"商务英语"},
+{"en":"invoice","phonetic":"/ˈɪnvɔɪs/","zh":"发票","example":"The invoice will be issued after payment.","cat":"商务英语"},
+{"en":"payment terms","phonetic":"/ˈpeɪmənt tɜːrmz/","zh":"付款条件","example":"What are your payment terms?","cat":"商务英语"},
+{"en":"net rate","phonetic":"/net reɪt/","zh":"净价（同行价）","example":"Could you share your net rate for travel agencies?","cat":"商务英语"},
+{"en":"commission","phonetic":"/kəˈmɪʃən/","zh":"佣金","example":"What commission do you offer to agencies?","cat":"商务英语"},
+{"en":"markup","phonetic":"/ˈmɑːrkʌp/","zh":"加价","example":"We add a small markup to the net rate.","cat":"商务英语"},
+{"en":"supplier","phonetic":"/səˈplaɪər/","zh":"供应商","example":"This hotel is one of our key suppliers.","cat":"商务英语"},
+{"en":"vendor","phonetic":"/ˈvendər/","zh":"供应商/卖方","example":"Please contact the vendor directly.","cat":"商务英语"},
+{"en":"contract","phonetic":"/ˈkɑːntrækt/","zh":"合同","example":"Please review the contract carefully.","cat":"商务英语"},
+{"en":"agreement","phonetic":"/əˈɡriːmənt/","zh":"协议","example":"We have a long-term agreement with this hotel.","cat":"商务英语"},
+{"en":"NDA","phonetic":"/ˌen diː ˈeɪ/","zh":"保密协议","example":"Please sign the NDA before the meeting.","cat":"商务英语"},
+{"en":"lead time","phonetic":"/liːd taɪm/","zh":"准备/响应时间","example":"The lead time for confirmation is 48 hours.","cat":"商务英语"},
+{"en":"turnaround time","phonetic":"/ˈtɜːrnəraʊnd taɪm/","zh":"周转时间","example":"Our typical turnaround time is two business days.","cat":"商务英语"},
+{"en":"deadline","phonetic":"/ˈdedlaɪn/","zh":"截止日期","example":"The deadline for booking is May 10.","cat":"商务英语"},
+{"en":"stakeholder","phonetic":"/ˈsteɪkhoʊldər/","zh":"利益相关方","example":"Please loop in all stakeholders.","cat":"商务英语"},
+{"en":"point of contact","phonetic":"/pɔɪnt əv ˈkɑːntækt/","zh":"对接人","example":"Who is the point of contact for this booking?","cat":"商务英语"},
+{"en":"follow up","phonetic":"/ˈfɑːloʊ ʌp/","zh":"跟进","example":"I'll follow up by end of day.","cat":"商务英语"},
+{"en":"reach out","phonetic":"/riːtʃ aʊt/","zh":"主动联系","example":"Feel free to reach out anytime.","cat":"商务英语"},
+{"en":"touch base","phonetic":"/tʌtʃ beɪs/","zh":"简短沟通","example":"Let's touch base next Monday.","cat":"商务英语"},
+{"en":"circle back","phonetic":"/ˈsɜːrkəl bæk/","zh":"回头再讨论","example":"Let's circle back on this later.","cat":"商务英语"},
+{"en":"loop in","phonetic":"/luːp ɪn/","zh":"拉进群/抄送","example":"I'll loop in our operations team.","cat":"商务英语"},
+{"en":"heads up","phonetic":"/hedz ʌp/","zh":"提前告知","example":"Just a quick heads up about tomorrow's tour.","cat":"商务英语"},
+{"en":"ASAP","phonetic":"/ˌeɪ es eɪ ˈpiː/","zh":"尽快 (as soon as possible)","example":"Please confirm ASAP.","cat":"商务英语"},
+{"en":"FYI","phonetic":"/ˌef waɪ ˈaɪ/","zh":"仅供参考 (for your information)","example":"FYI, the rate is non-refundable.","cat":"商务英语"},
+{"en":"TBD","phonetic":"/ˌtiː biː ˈdiː/","zh":"待定 (to be determined)","example":"Departure time is still TBD.","cat":"商务英语"},
+{"en":"TBC","phonetic":"/ˌtiː biː ˈsiː/","zh":"待确认 (to be confirmed)","example":"Hotel is booked, transfer is TBC.","cat":"商务英语"},
+{"en":"ETA","phonetic":"/ˌiː tiː ˈeɪ/","zh":"预计到达时间","example":"What is the ETA for the airport transfer?","cat":"商务英语"},
+{"en":"ETD","phonetic":"/ˌiː tiː ˈdiː/","zh":"预计出发时间","example":"The ETD for the train is 9:15 AM.","cat":"商务英语"},
+{"en":"EOD","phonetic":"/ˌiː oʊ ˈdiː/","zh":"当天结束前 (end of day)","example":"I'll send the itinerary by EOD.","cat":"商务英语"},
+{"en":"COB","phonetic":"/ˌsiː oʊ ˈbiː/","zh":"工作日结束前 (close of business)","example":"Please reply by COB Friday.","cat":"商务英语"},
+{"en":"OOO","phonetic":"/ˌoʊ oʊ ˈoʊ/","zh":"不在办公室 (out of office)","example":"I'll be OOO next week.","cat":"商务英语"},
+{"en":"RSVP","phonetic":"/ˌɑːr es viː ˈpiː/","zh":"请回复","example":"Please RSVP by Friday.","cat":"商务英语"},
+{"en":"BTW","phonetic":"/ˌbiː tiː ˈdʌbəljuː/","zh":"顺便说一下 (by the way)","example":"BTW, the museum is closed on Mondays.","cat":"网络用语"},
+{"en":"IMO","phonetic":"/ˌaɪ em ˈoʊ/","zh":"我认为 (in my opinion)","example":"IMO, three nights in Rome is enough.","cat":"网络用语"},
+{"en":"TL;DR","phonetic":"/ˌtiː el ˌdiː ˈɑːr/","zh":"太长不看版","example":"TL;DR: book the deluxe room.","cat":"网络用语"},
+{"en":"DM","phonetic":"/ˌdiː ˈem/","zh":"私信 (direct message)","example":"DM me the booking reference.","cat":"网络用语"},
+{"en":"NP","phonetic":"/ˌen ˈpiː/","zh":"没问题 (no problem)","example":"NP, I'll handle it.","cat":"网络用语"},
+{"en":"NVM","phonetic":"/ˌen viː ˈem/","zh":"算了/没事 (never mind)","example":"NVM, I found it.","cat":"网络用语"},
+{"en":"OMW","phonetic":"/ˌoʊ em ˈdʌbəljuː/","zh":"在路上 (on my way)","example":"OMW to the hotel now.","cat":"网络用语"},
+{"en":"WFH","phonetic":"/ˌdʌbəljuː ef ˈeɪtʃ/","zh":"居家办公 (work from home)","example":"I'm WFH today.","cat":"网络用语"},
+{"en":"ICYMI","phonetic":"/ˌaɪ siː waɪ em ˈaɪ/","zh":"以防你错过","example":"ICYMI, the flight time changed.","cat":"网络用语"},
+{"en":"thx","phonetic":"/θæŋks/","zh":"谢谢 (thanks)","example":"Thx for the quick reply!","cat":"网络用语"},
+{"en":"pls","phonetic":"/pliːz/","zh":"请 (please)","example":"Pls confirm the booking.","cat":"网络用语"},
+{"en":"cheers","phonetic":"/tʃɪrz/","zh":"谢/祝好（口语结尾）","example":"Cheers, talk soon!","cat":"网络用语"},
+{"en":"no worries","phonetic":"/noʊ ˈwɜːriz/","zh":"没事/别担心","example":"No worries, take your time.","cat":"网络用语"},
+{"en":"got it","phonetic":"/ɡɑːt ɪt/","zh":"明白了","example":"Got it, I'll book it now.","cat":"网络用语"},
+{"en":"on it","phonetic":"/ɑːn ɪt/","zh":"我在处理","example":"On it — will revert in 10 minutes.","cat":"网络用语"},
+{"en":"sounds good","phonetic":"/saʊndz ɡʊd/","zh":"听起来不错","example":"Sounds good, let's go with that.","cat":"网络用语"},
+{"en":"let me know","phonetic":"/let miː noʊ/","zh":"告诉我","example":"Let me know your preference.","cat":"网络用语"},
+{"en":"keep me posted","phonetic":"/kiːp miː ˈpoʊstɪd/","zh":"有进展告诉我","example":"Keep me posted on the cancellation.","cat":"网络用语"},
+{"en":"Best regards","phonetic":"/best rɪˈɡɑːrdz/","zh":"此致敬礼（邮件结尾）","example":"Best regards, Lin","cat":"网络用语"},
+{"en":"Kind regards","phonetic":"/kaɪnd rɪˈɡɑːrdz/","zh":"谨上（正式邮件）","example":"Kind regards, Lin","cat":"网络用语"},
+{"en":"Thanks in advance","phonetic":"/θæŋks ɪn ədˈvæns/","zh":"提前感谢","example":"Thanks in advance for your help.","cat":"网络用语"},
+{"en":"free cancellation","phonetic":"/friː ˌkænsəˈleɪʃən/","zh":"免费取消","example":"Free cancellation until 24 hours before check-in.","cat":"订房网站"},
+{"en":"non-refundable rate","phonetic":"/ˌnɑːn rɪˈfʌndəbl reɪt/","zh":"不可退款房价","example":"This is a non-refundable rate.","cat":"订房网站"},
+{"en":"fully refundable","phonetic":"/ˈfʊli rɪˈfʌndəbl/","zh":"可全额退款","example":"This room is fully refundable.","cat":"订房网站"},
+{"en":"pay at property","phonetic":"/peɪ æt ˈprɑːpərti/","zh":"入住时付款","example":"You can pay at the property on arrival.","cat":"订房网站"},
+{"en":"pay now","phonetic":"/peɪ naʊ/","zh":"立即付款","example":"Pay now and save 10%.","cat":"订房网站"},
+{"en":"reserve now, pay later","phonetic":"/rɪˈzɜːrv naʊ peɪ ˈleɪtər/","zh":"先订后付","example":"Reserve now, pay later — no card required.","cat":"订房网站"},
+{"en":"breakfast included","phonetic":"/ˈbrekfəst ɪnˈkluːdɪd/","zh":"含早餐","example":"Breakfast included for two guests.","cat":"订房网站"},
+{"en":"breakfast not included","phonetic":"/ˈbrekfəst nɑːt ɪnˈkluːdɪd/","zh":"不含早餐","example":"Breakfast not included — extra €25 per person.","cat":"订房网站"},
+{"en":"taxes included","phonetic":"/ˈtæksɪz ɪnˈkluːdɪd/","zh":"含税","example":"Price shown is taxes included.","cat":"订房网站"},
+{"en":"excluding taxes and fees","phonetic":"/ɪkˈskluːdɪŋ ˈtæksɪz ænd fiːz/","zh":"不含税费","example":"€180 per night, excluding taxes and fees.","cat":"订房网站"},
+{"en":"city tax","phonetic":"/ˈsɪti tæks/","zh":"城市税","example":"City tax is €4 per person per night.","cat":"订房网站"},
+{"en":"resort fee","phonetic":"/rɪˈzɔːrt fiː/","zh":"度假村服务费","example":"A daily resort fee applies.","cat":"订房网站"},
+{"en":"per night","phonetic":"/pər naɪt/","zh":"每晚","example":"€220 per night for 2 guests.","cat":"订房网站"},
+{"en":"per person","phonetic":"/pər ˈpɜːrsən/","zh":"每人","example":"€80 per person, breakfast included.","cat":"订房网站"},
+{"en":"limited availability","phonetic":"/ˈlɪmɪtɪd əˌveɪləˈbɪləti/","zh":"房源紧张","example":"Limited availability for these dates.","cat":"订房网站"},
+{"en":"only X rooms left","phonetic":"/ˈoʊnli ruːmz left/","zh":"仅剩X间","example":"Only 2 rooms left at this price!","cat":"订房网站"},
+{"en":"sold out","phonetic":"/soʊld aʊt/","zh":"已订满","example":"This room type is sold out.","cat":"订房网站"},
+{"en":"king bed","phonetic":"/kɪŋ bed/","zh":"特大床","example":"Room with one king bed.","cat":"订房网站"},
+{"en":"queen bed","phonetic":"/kwiːn bed/","zh":"大床","example":"Room with one queen bed.","cat":"订房网站"},
+{"en":"twin room","phonetic":"/twɪn ruːm/","zh":"双床房","example":"We need a twin room for two friends.","cat":"订房网站"},
+{"en":"double room","phonetic":"/ˈdʌbəl ruːm/","zh":"大床房","example":"A double room with one bed.","cat":"订房网站"},
+{"en":"triple room","phonetic":"/ˈtrɪpəl ruːm/","zh":"三人间","example":"Do you have triple rooms available?","cat":"订房网站"},
+{"en":"connecting rooms","phonetic":"/kəˈnektɪŋ ruːmz/","zh":"相连房","example":"Could we book connecting rooms?","cat":"订房网站"},
+{"en":"adjoining rooms","phonetic":"/əˈdʒɔɪnɪŋ ruːmz/","zh":"相邻房","example":"Two adjoining rooms, please.","cat":"订房网站"},
+{"en":"standard room","phonetic":"/ˈstændərd ruːm/","zh":"标准房","example":"A standard room is fine.","cat":"订房网站"},
+{"en":"superior room","phonetic":"/səˈpɪriər ruːm/","zh":"高级房","example":"Superior rooms have a balcony.","cat":"订房网站"},
+{"en":"deluxe room","phonetic":"/dɪˈlʌks ruːm/","zh":"豪华房","example":"The deluxe room has a city view.","cat":"订房网站"},
+{"en":"junior suite","phonetic":"/ˈdʒuːniər swiːt/","zh":"小套房","example":"A junior suite with a sitting area.","cat":"订房网站"},
+{"en":"executive suite","phonetic":"/ɪɡˈzekjətɪv swiːt/","zh":"行政套房","example":"Upgrade to an executive suite.","cat":"订房网站"},
+{"en":"city view","phonetic":"/ˈsɪti vjuː/","zh":"城市景观","example":"Room with a city view, please.","cat":"订房网站"},
+{"en":"sea view","phonetic":"/siː vjuː/","zh":"海景","example":"We'd like a sea view room.","cat":"订房网站"},
+{"en":"garden view","phonetic":"/ˈɡɑːrdən vjuː/","zh":"花园景观","example":"A quiet garden view room.","cat":"订房网站"},
+{"en":"en-suite bathroom","phonetic":"/ˌɑːn ˈswiːt ˈbæθruːm/","zh":"独立卫浴","example":"All rooms have an en-suite bathroom.","cat":"订房网站"},
+{"en":"shared bathroom","phonetic":"/ʃerd ˈbæθruːm/","zh":"公共卫浴","example":"This room has a shared bathroom.","cat":"订房网站"},
+{"en":"amenities","phonetic":"/əˈmenətiz/","zh":"设施/用品","example":"In-room amenities include slippers and a kettle.","cat":"订房网站"},
+{"en":"toiletries","phonetic":"/ˈtɔɪlətriz/","zh":"洗漱用品","example":"Free toiletries are provided.","cat":"订房网站"},
+{"en":"on-site parking","phonetic":"/ɑːn saɪt ˈpɑːrkɪŋ/","zh":"自有停车场","example":"Free on-site parking is available.","cat":"订房网站"},
+{"en":"valet parking","phonetic":"/væˈleɪ ˈpɑːrkɪŋ/","zh":"代客泊车","example":"Valet parking is €30 per day.","cat":"订房网站"},
+{"en":"shuttle service","phonetic":"/ˈʃʌtəl ˈsɜːrvɪs/","zh":"接驳服务","example":"Free airport shuttle service.","cat":"订房网站"},
+{"en":"airport transfer","phonetic":"/ˈerpɔːrt ˈtrænsfər/","zh":"机场接送","example":"Airport transfer can be arranged.","cat":"订房网站"},
+{"en":"half board","phonetic":"/hæf bɔːrd/","zh":"半膳（含早晚餐）","example":"Half board includes breakfast and dinner.","cat":"订房网站"},
+{"en":"full board","phonetic":"/fʊl bɔːrd/","zh":"全膳","example":"Full board includes all three meals.","cat":"订房网站"},
+{"en":"all-inclusive","phonetic":"/ˌɔːl ɪnˈkluːsɪv/","zh":"全包式","example":"All-inclusive resort with drinks included.","cat":"订房网站"},
+{"en":"pet-friendly","phonetic":"/pet ˈfrendli/","zh":"宠物友好","example":"Pet-friendly hotel, dogs welcome.","cat":"订房网站"},
+{"en":"non-smoking","phonetic":"/nɑːn ˈsmoʊkɪŋ/","zh":"无烟","example":"All rooms are non-smoking.","cat":"订房网站"},
+{"en":"wheelchair accessible","phonetic":"/ˈwiːltʃer əkˈsesəbəl/","zh":"无障碍","example":"The hotel is wheelchair accessible.","cat":"订房网站"},
+{"en":"guest reviews","phonetic":"/ɡest rɪˈvjuːz/","zh":"住客评价","example":"Excellent based on guest reviews.","cat":"订房网站"},
+{"en":"property highlights","phonetic":"/ˈprɑːpərti ˈhaɪlaɪts/","zh":"酒店亮点","example":"Property highlights: rooftop pool and spa.","cat":"订房网站"},
+{"en":"host","phonetic":"/hoʊst/","zh":"房东（民宿）","example":"The host will meet you at check-in.","cat":"订房网站"},
+{"en":"self check-in","phonetic":"/self tʃek ɪn/","zh":"自助入住","example":"Self check-in via lockbox.","cat":"订房网站"},
+{"en":"reservation","phonetic":"/ˌrezərˈveɪʃən/","zh":"预订","example":"I have a reservation for tonight.","cat":"订餐网站"},
+{"en":"book a table","phonetic":"/bʊk ə ˈteɪbəl/","zh":"订位","example":"I'd like to book a table for tomorrow.","cat":"订餐网站"},
+{"en":"table for two","phonetic":"/ˈteɪbəl fər tuː/","zh":"两人位","example":"A table for two at 7 PM, please.","cat":"订餐网站"},
+{"en":"party of four","phonetic":"/ˈpɑːrti əv fɔːr/","zh":"四人一组","example":"A reservation for a party of four.","cat":"订餐网站"},
+{"en":"prix fixe menu","phonetic":"/priː ˈfɪks ˈmenjuː/","zh":"套餐","example":"The prix fixe menu is €65.","cat":"订餐网站"},
+{"en":"a la carte","phonetic":"/ˌɑː lə ˈkɑːrt/","zh":"单点","example":"We'd prefer to order a la carte.","cat":"订餐网站"},
+{"en":"tasting menu","phonetic":"/ˈteɪstɪŋ ˈmenjuː/","zh":"品尝菜单","example":"The chef's tasting menu is 7 courses.","cat":"订餐网站"},
+{"en":"wine pairing","phonetic":"/waɪn ˈperɪŋ/","zh":"配酒","example":"Add wine pairing for €45.","cat":"订餐网站"},
+{"en":"corkage fee","phonetic":"/ˈkɔːrkɪdʒ fiː/","zh":"开瓶费","example":"What is the corkage fee?","cat":"订餐网站"},
+{"en":"service charge","phonetic":"/ˈsɜːrvɪs tʃɑːrdʒ/","zh":"服务费","example":"A 10% service charge will be added.","cat":"订餐网站"},
+{"en":"gratuity","phonetic":"/ɡrəˈtuːəti/","zh":"小费","example":"Gratuity is at your discretion.","cat":"订餐网站"},
+{"en":"dietary restrictions","phonetic":"/ˈdaɪəteri rɪˈstrɪkʃənz/","zh":"饮食限制","example":"Please note our dietary restrictions.","cat":"订餐网站"},
+{"en":"allergen","phonetic":"/ˈælərdʒən/","zh":"过敏原","example":"Please list common allergens.","cat":"订餐网站"},
+{"en":"gluten-free","phonetic":"/ˈɡluːtən friː/","zh":"无麸质","example":"Do you have gluten-free options?","cat":"订餐网站"},
+{"en":"vegan","phonetic":"/ˈviːɡən/","zh":"纯素","example":"My client is vegan.","cat":"订餐网站"},
+{"en":"vegetarian","phonetic":"/ˌvedʒəˈteriən/","zh":"素食","example":"Do you offer vegetarian dishes?","cat":"订餐网站"},
+{"en":"halal","phonetic":"/həˈlɑːl/","zh":"清真","example":"We need halal options.","cat":"订餐网站"},
+{"en":"kosher","phonetic":"/ˈkoʊʃər/","zh":"犹太洁食","example":"Is kosher food available?","cat":"订餐网站"},
+{"en":"dress code","phonetic":"/dres koʊd/","zh":"着装要求","example":"What is the dress code?","cat":"订餐网站"},
+{"en":"smart casual","phonetic":"/smɑːrt ˈkæʒuəl/","zh":"商务休闲","example":"Dress code: smart casual.","cat":"订餐网站"},
+{"en":"formal attire","phonetic":"/ˈfɔːrməl əˈtaɪər/","zh":"正装","example":"Formal attire is required.","cat":"订餐网站"},
+{"en":"walk-in","phonetic":"/wɔːk ɪn/","zh":"无需预约","example":"Walk-ins are welcome before 6 PM.","cat":"订餐网站"},
+{"en":"waitlist","phonetic":"/ˈweɪtlɪst/","zh":"等位名单","example":"You can join the waitlist.","cat":"订餐网站"},
+{"en":"signature dish","phonetic":"/ˈsɪɡnətʃər dɪʃ/","zh":"招牌菜","example":"What is the chef's signature dish?","cat":"订餐网站"},
+{"en":"chef's recommendation","phonetic":"/ʃefs ˌrekəmenˈdeɪʃən/","zh":"主厨推荐","example":"We'll go with the chef's recommendation.","cat":"订餐网站"},
+{"en":"seasonal menu","phonetic":"/ˈsiːzənəl ˈmenjuː/","zh":"时令菜单","example":"They offer a seasonal menu.","cat":"订餐网站"},
+{"en":"happy hour","phonetic":"/ˈhæpi aʊər/","zh":"欢乐时光","example":"Happy hour is from 5 to 7 PM.","cat":"订餐网站"},
+{"en":"BYOB","phonetic":"/ˌbiː waɪ oʊ ˈbiː/","zh":"自带酒水","example":"This restaurant is BYOB.","cat":"订餐网站"},
+{"en":"departure","phonetic":"/dɪˈpɑːrtʃər/","zh":"出发","example":"Check the departure time.","cat":"订票网站"},
+{"en":"arrival","phonetic":"/əˈraɪvəl/","zh":"到达","example":"Arrival time is 4:30 PM.","cat":"订票网站"},
+{"en":"terminal","phonetic":"/ˈtɜːrmɪnəl/","zh":"航站楼","example":"The flight departs from Terminal 2.","cat":"订票网站"},
+{"en":"gate","phonetic":"/ɡeɪt/","zh":"登机口","example":"Boarding at Gate B12.","cat":"订票网站"},
+{"en":"boarding pass","phonetic":"/ˈbɔːrdɪŋ pæs/","zh":"登机牌","example":"Please show your boarding pass.","cat":"订票网站"},
+{"en":"baggage claim","phonetic":"/ˈbæɡɪdʒ kleɪm/","zh":"行李提取处","example":"Baggage claim is on level 1.","cat":"订票网站"},
+{"en":"layover","phonetic":"/ˈleɪoʊvər/","zh":"短时中转","example":"A 2-hour layover in Frankfurt.","cat":"订票网站"},
+{"en":"stopover","phonetic":"/ˈstɑːpoʊvər/","zh":"长时间停留","example":"A 24-hour stopover in Doha.","cat":"订票网站"},
+{"en":"direct flight","phonetic":"/dəˈrekt flaɪt/","zh":"直飞","example":"Is there a direct flight to Rome?","cat":"订票网站"},
+{"en":"nonstop","phonetic":"/ˌnɑːnˈstɑːp/","zh":"不停站","example":"A nonstop flight from Shanghai to Paris.","cat":"订票网站"},
+{"en":"economy class","phonetic":"/ɪˈkɑːnəmi klæs/","zh":"经济舱","example":"Two economy class tickets, please.","cat":"订票网站"},
+{"en":"premium economy","phonetic":"/ˈpriːmiəm ɪˈkɑːnəmi/","zh":"超级经济舱","example":"Upgrade to premium economy.","cat":"订票网站"},
+{"en":"business class","phonetic":"/ˈbɪznəs klæs/","zh":"商务舱","example":"Book business class for the long-haul flight.","cat":"订票网站"},
+{"en":"first class","phonetic":"/fɜːrst klæs/","zh":"头等舱","example":"My VIP client prefers first class.","cat":"订票网站"},
+{"en":"seat selection","phonetic":"/siːt sɪˈlekʃən/","zh":"选座","example":"Seat selection is free for members.","cat":"订票网站"},
+{"en":"window seat","phonetic":"/ˈwɪndoʊ siːt/","zh":"靠窗座位","example":"My client prefers a window seat.","cat":"订票网站"},
+{"en":"redeye flight","phonetic":"/ˈredaɪ flaɪt/","zh":"红眼航班","example":"It's a redeye flight, leaving at 1 AM.","cat":"订票网站"},
+{"en":"on time","phonetic":"/ɑːn taɪm/","zh":"准点","example":"The flight is on time.","cat":"订票网站"},
+{"en":"delayed","phonetic":"/dɪˈleɪd/","zh":"延误","example":"Your flight has been delayed by 2 hours.","cat":"订票网站"},
+{"en":"rebook","phonetic":"/riːˈbʊk/","zh":"改签","example":"We need to rebook the flight.","cat":"订票网站"},
+{"en":"refundable ticket","phonetic":"/rɪˈfʌndəbl ˈtɪkɪt/","zh":"可退票","example":"Is this a refundable ticket?","cat":"订票网站"},
+{"en":"platform","phonetic":"/ˈplætfɔːrm/","zh":"站台","example":"The train departs from Platform 5.","cat":"订票网站"},
+{"en":"high-speed train","phonetic":"/haɪ spiːd treɪn/","zh":"高铁","example":"The high-speed train takes 90 minutes.","cat":"订票网站"},
+{"en":"first class (train)","phonetic":"/fɜːrst klæs/","zh":"火车一等座","example":"First class on the Eurostar is more spacious.","cat":"订票网站"},
+{"en":"second class (train)","phonetic":"/ˈsekənd klæs/","zh":"火车二等座","example":"Second class is comfortable and cheaper.","cat":"订票网站"},
+{"en":"e-ticket","phonetic":"/ˈiː ˌtɪkɪt/","zh":"电子票","example":"You'll receive an e-ticket by email.","cat":"订票网站"},
+{"en":"reservation fee","phonetic":"/ˌrezərˈveɪʃən fiː/","zh":"订座费","example":"A reservation fee of €10 applies.","cat":"订票网站"},
+{"en":"skip-the-line entry","phonetic":"/skɪp ðə laɪn ˈentri/","zh":"免排队入场","example":"Skip-the-line entry to the Vatican.","cat":"项目预订"},
+{"en":"audio guide","phonetic":"/ˈɔːdioʊ ɡaɪd/","zh":"语音导览","example":"Audio guide available in 8 languages.","cat":"项目预订"},
+{"en":"live guide","phonetic":"/laɪv ɡaɪd/","zh":"真人导游","example":"Tour with a live English-speaking guide.","cat":"项目预订"},
+{"en":"meeting point","phonetic":"/ˈmiːtɪŋ pɔɪnt/","zh":"集合地点","example":"Meeting point: in front of the Colosseum.","cat":"项目预订"},
+{"en":"pickup point","phonetic":"/ˈpɪkʌp pɔɪnt/","zh":"接送地点","example":"Pickup point is your hotel lobby.","cat":"项目预订"},
+{"en":"hotel pickup","phonetic":"/hoʊˈtel ˈpɪkʌp/","zh":"酒店接送","example":"Hotel pickup is included.","cat":"项目预订"},
+{"en":"hotel drop-off","phonetic":"/hoʊˈtel ˈdrɑːpɔːf/","zh":"酒店送回","example":"Hotel drop-off after the tour.","cat":"项目预订"},
+{"en":"duration","phonetic":"/duˈreɪʃən/","zh":"时长","example":"Duration: approximately 3 hours.","cat":"项目预订"},
+{"en":"group size","phonetic":"/ɡruːp saɪz/","zh":"团队人数","example":"Maximum group size is 15 people.","cat":"项目预订"},
+{"en":"small group tour","phonetic":"/smɔːl ɡruːp tʊr/","zh":"小团游","example":"A small group tour limited to 8 guests.","cat":"项目预订"},
+{"en":"private tour","phonetic":"/ˈpraɪvət tʊr/","zh":"私人导览","example":"A private tour for our clients only.","cat":"项目预订"},
+{"en":"shared tour","phonetic":"/ʃerd tʊr/","zh":"拼团游","example":"Shared tour with other guests.","cat":"项目预订"},
+{"en":"self-guided","phonetic":"/self ˈɡaɪdɪd/","zh":"自助游","example":"A self-guided audio walk.","cat":"项目预订"},
+{"en":"e-voucher","phonetic":"/ˈiː ˌvaʊtʃər/","zh":"电子凭证","example":"Show the e-voucher at the entrance.","cat":"项目预订"},
+{"en":"mobile ticket","phonetic":"/ˈmoʊbəl ˈtɪkɪt/","zh":"手机票","example":"Mobile ticket accepted, no need to print.","cat":"项目预订"},
+{"en":"instant confirmation","phonetic":"/ˈɪnstənt ˌkɑːnfərˈmeɪʃən/","zh":"即时确认","example":"Instant confirmation by email.","cat":"项目预订"},
+{"en":"combo ticket","phonetic":"/ˈkɑːmboʊ ˈtɪkɪt/","zh":"套票","example":"Combo ticket: museum + boat tour.","cat":"项目预订"},
+{"en":"includes","phonetic":"/ɪnˈkluːdz/","zh":"包含","example":"Includes entrance fee and audio guide.","cat":"项目预订"},
+{"en":"not included","phonetic":"/nɑːt ɪnˈkluːdɪd/","zh":"不含","example":"Lunch is not included.","cat":"项目预订"},
+{"en":"what to bring","phonetic":"/wɑːt tə brɪŋ/","zh":"需携带物品","example":"What to bring: passport and comfortable shoes.","cat":"项目预订"},
+{"en":"reservation required","phonetic":"/ˌrezərˈveɪʃən rɪˈkwaɪərd/","zh":"需预约","example":"Reservation required at least 48 hours in advance.","cat":"项目预订"},
+{"en":"free cancellation up to 24h","phonetic":"/friː ˌkænsəˈleɪʃən ʌp tə 24 aʊərz/","zh":"24小时前免费取消","example":"Free cancellation up to 24 hours before the tour.","cat":"项目预订"},
+{"en":"weather permitting","phonetic":"/ˈweðər pərˈmɪtɪŋ/","zh":"天气允许情况下","example":"Tour will run weather permitting.","cat":"项目预订"},
+{"en":"comfortable shoes","phonetic":"/ˈkʌmfərtəbl ʃuːz/","zh":"舒适鞋","example":"Wear comfortable shoes; lots of walking.","cat":"项目预订"},
+{"en":"minimum age","phonetic":"/ˈmɪnəməm eɪdʒ/","zh":"最低年龄","example":"Minimum age is 8 years old.","cat":"项目预订"},
+{"en":"infant","phonetic":"/ˈɪnfənt/","zh":"婴儿","example":"Infants under 2 are free.","cat":"项目预订"},
+{"en":"figure out","phonetic":"/ˈfɪɡjər aʊt/","zh":"弄明白/搞清楚","example":"Let me figure out the best route.","cat":"口语短语"},
+{"en":"work out","phonetic":"/wɜːrk aʊt/","zh":"解决/锻炼","example":"Don't worry, it'll work out.","cat":"口语短语"},
+{"en":"sort out","phonetic":"/sɔːrt aʊt/","zh":"解决/整理","example":"I'll sort it out by tomorrow.","cat":"口语短语"},
+{"en":"come up with","phonetic":"/kʌm ʌp wɪð/","zh":"想出","example":"Can you come up with a backup plan?","cat":"口语短语"},
+{"en":"take care of","phonetic":"/teɪk ker əv/","zh":"处理/照顾","example":"I'll take care of the booking.","cat":"口语短语"},
+{"en":"look forward to","phonetic":"/lʊk ˈfɔːrwərd tə/","zh":"期待","example":"I'm looking forward to the trip!","cat":"口语短语"},
+{"en":"deal with","phonetic":"/diːl wɪð/","zh":"处理/应对","example":"How do you deal with picky clients?","cat":"口语短语"},
+{"en":"run out of","phonetic":"/rʌn aʊt əv/","zh":"用完/没了","example":"We've run out of milk.","cat":"口语短语"},
+{"en":"give it a try","phonetic":"/ɡɪv ɪt ə traɪ/","zh":"试试看","example":"Why not give it a try?","cat":"口语短语"},
+{"en":"hang out","phonetic":"/hæŋ aʊt/","zh":"闲逛/聚一聚","example":"Want to hang out this weekend?","cat":"口语短语"},
+{"en":"catch up","phonetic":"/kætʃ ʌp/","zh":"叙旧/聊近况","example":"Let's grab coffee and catch up.","cat":"口语短语"},
+{"en":"bump into","phonetic":"/bʌmp ˈɪntə/","zh":"偶遇","example":"I bumped into an old friend at the airport.","cat":"口语短语"},
+{"en":"run into","phonetic":"/rʌn ˈɪntə/","zh":"偶遇/遇到","example":"I ran into Tom yesterday.","cat":"口语短语"},
+{"en":"drop by","phonetic":"/drɑːp baɪ/","zh":"顺道拜访","example":"Feel free to drop by anytime.","cat":"口语短语"},
+{"en":"show up","phonetic":"/ʃoʊ ʌp/","zh":"出现/到场","example":"He didn't show up for the meeting.","cat":"口语短语"},
+{"en":"mess up","phonetic":"/mes ʌp/","zh":"搞砸","example":"I messed up the booking date.","cat":"口语短语"},
+{"en":"slip my mind","phonetic":"/slɪp maɪ maɪnd/","zh":"忘了","example":"Sorry, it totally slipped my mind.","cat":"口语短语"},
+{"en":"running late","phonetic":"/ˈrʌnɪŋ leɪt/","zh":"要迟到了","example":"I'm running late — be there in 10.","cat":"口语短语"},
+{"en":"on the way","phonetic":"/ɑːn ðə weɪ/","zh":"在路上","example":"I'm on the way, see you soon.","cat":"口语短语"},
+{"en":"in a rush","phonetic":"/ɪn ə rʌʃ/","zh":"赶时间","example":"Sorry, I'm in a rush right now.","cat":"口语短语"},
+{"en":"take it easy","phonetic":"/teɪk ɪt ˈiːzi/","zh":"放轻松","example":"Take it easy — we'll figure it out.","cat":"口语短语"},
+{"en":"watch out","phonetic":"/wɑːtʃ aʊt/","zh":"小心","example":"Watch out for the step.","cat":"口语短语"},
+{"en":"no big deal","phonetic":"/noʊ bɪɡ diːl/","zh":"没什么大不了","example":"No big deal, happens to everyone.","cat":"口语短语"},
+{"en":"count me in","phonetic":"/kaʊnt miː ɪn/","zh":"算我一个","example":"Dinner Friday? Count me in!","cat":"口语短语"},
+{"en":"count me out","phonetic":"/kaʊnt miː aʊt/","zh":"别算我","example":"Karaoke? Count me out, sorry.","cat":"口语短语"},
+{"en":"split the bill","phonetic":"/splɪt ðə bɪl/","zh":"AA/平摊","example":"Let's split the bill, OK?","cat":"口语短语"},
+{"en":"my treat","phonetic":"/maɪ triːt/","zh":"我请客","example":"Lunch is my treat today.","cat":"口语短语"},
+{"en":"on me","phonetic":"/ɑːn miː/","zh":"算我的","example":"This round is on me.","cat":"口语短语"},
+{"en":"hang in there","phonetic":"/hæŋ ɪn ðer/","zh":"撑住/坚持","example":"Hang in there — almost done.","cat":"口语短语"},
+{"en":"wrap up","phonetic":"/ræp ʌp/","zh":"结束/收尾","example":"Let's wrap up the meeting.","cat":"口语短语"},
+{"en":"give me a hand","phonetic":"/ɡɪv miː ə hænd/","zh":"帮我一下","example":"Could you give me a hand with these bags?","cat":"口语短语"},
+{"en":"run by you","phonetic":"/rʌn baɪ juː/","zh":"找你过一下/请教","example":"There's something I want to run by you.","cat":"口语短语"},
+{"en":"excited","phonetic":"/ɪkˈsaɪtɪd/","zh":"兴奋","example":"I'm so excited about the new project!","cat":"情绪心情"},
+{"en":"exhausted","phonetic":"/ɪɡˈzɔːstɪd/","zh":"精疲力尽","example":"I'm exhausted after that 12-hour flight.","cat":"情绪心情"},
+{"en":"frustrated","phonetic":"/ˈfrʌstreɪtɪd/","zh":"沮丧/抓狂","example":"I'm frustrated with the slow reply.","cat":"情绪心情"},
+{"en":"nervous","phonetic":"/ˈnɜːrvəs/","zh":"紧张","example":"I'm a bit nervous about the call.","cat":"情绪心情"},
+{"en":"relieved","phonetic":"/rɪˈliːvd/","zh":"松一口气","example":"I'm so relieved the booking went through.","cat":"情绪心情"},
+{"en":"overwhelmed","phonetic":"/ˌoʊvərˈwelmd/","zh":"不知所措","example":"I feel overwhelmed by all the emails.","cat":"情绪心情"},
+{"en":"anxious","phonetic":"/ˈæŋkʃəs/","zh":"焦虑","example":"I'm anxious about the deadline.","cat":"情绪心情"},
+{"en":"annoyed","phonetic":"/əˈnɔɪd/","zh":"烦/恼火","example":"I'm a bit annoyed with the delay.","cat":"情绪心情"},
+{"en":"confused","phonetic":"/kənˈfjuːzd/","zh":"困惑","example":"I'm confused about the cancellation policy.","cat":"情绪心情"},
+{"en":"curious","phonetic":"/ˈkjʊriəs/","zh":"好奇","example":"I'm curious how they did it.","cat":"情绪心情"},
+{"en":"proud","phonetic":"/praʊd/","zh":"自豪","example":"I'm proud of how the trip turned out.","cat":"情绪心情"},
+{"en":"embarrassed","phonetic":"/ɪmˈberəst/","zh":"尴尬","example":"I'm so embarrassed — I forgot her name.","cat":"情绪心情"},
+{"en":"disappointed","phonetic":"/ˌdɪsəˈpɔɪntɪd/","zh":"失望","example":"The client was disappointed by the hotel.","cat":"情绪心情"},
+{"en":"grateful","phonetic":"/ˈɡreɪtfəl/","zh":"感激","example":"I'm grateful for your help.","cat":"情绪心情"},
+{"en":"impressed","phonetic":"/ɪmˈprest/","zh":"印象深刻","example":"I'm really impressed by the service.","cat":"情绪心情"},
+{"en":"in a good mood","phonetic":"/ɪn ə ɡʊd muːd/","zh":"心情好","example":"She's in a good mood today.","cat":"情绪心情"},
+{"en":"in a bad mood","phonetic":"/ɪn ə bæd muːd/","zh":"心情不好","example":"He's in a bad mood — give him space.","cat":"情绪心情"},
+{"en":"stressed out","phonetic":"/strest aʊt/","zh":"压力山大","example":"I'm so stressed out about this deal.","cat":"情绪心情"},
+{"en":"chill","phonetic":"/tʃɪl/","zh":"放松/淡定","example":"Just chill — it's all under control.","cat":"情绪心情"},
+{"en":"fed up","phonetic":"/fed ʌp/","zh":"受够了","example":"I'm fed up with the constant changes.","cat":"情绪心情"},
+{"en":"burned out","phonetic":"/bɜːrnd aʊt/","zh":"倦怠/筋疲力尽","example":"I'm completely burned out this week.","cat":"情绪心情"},
+{"en":"nailed it","phonetic":"/neɪld ɪt/","zh":"搞定了/完美","example":"You nailed the presentation!","cat":"情绪心情"},
+{"en":"on edge","phonetic":"/ɑːn edʒ/","zh":"紧绷","example":"Everyone's on edge before the audit.","cat":"情绪心情"},
+{"en":"down","phonetic":"/daʊn/","zh":"低落","example":"He's been a bit down lately.","cat":"情绪心情"},
+{"en":"pumped","phonetic":"/pʌmpt/","zh":"干劲十足","example":"I'm so pumped about the new trip!","cat":"情绪心情"},
+{"en":"swamped","phonetic":"/swɑːmpt/","zh":"忙到不行","example":"I'm completely swamped this week.","cat":"情绪心情"},
+{"en":"to-go","phonetic":"/tə ɡoʊ/","zh":"外带","example":"One latte to-go, please.","cat":"餐饮日常"},
+{"en":"takeout","phonetic":"/ˈteɪkaʊt/","zh":"外卖/外带","example":"Let's get takeout tonight.","cat":"餐饮日常"},
+{"en":"dine-in","phonetic":"/ˈdaɪn ɪn/","zh":"堂食","example":"Dine-in or takeout?","cat":"餐饮日常"},
+{"en":"for here","phonetic":"/fər hɪr/","zh":"堂食","example":"Is that for here or to go?","cat":"餐饮日常"},
+{"en":"specials","phonetic":"/ˈspeʃəlz/","zh":"今日特餐","example":"What are today's specials?","cat":"餐饮日常"},
+{"en":"appetizer","phonetic":"/ˈæpɪtaɪzər/","zh":"开胃菜","example":"We'll start with an appetizer.","cat":"餐饮日常"},
+{"en":"main course","phonetic":"/meɪn kɔːrs/","zh":"主菜","example":"For my main course, the salmon, please.","cat":"餐饮日常"},
+{"en":"side dish","phonetic":"/saɪd dɪʃ/","zh":"配菜","example":"Can I get a side of fries?","cat":"餐饮日常"},
+{"en":"dessert","phonetic":"/dɪˈzɜːrt/","zh":"甜点","example":"We'll skip dessert tonight.","cat":"餐饮日常"},
+{"en":"medium rare","phonetic":"/ˈmiːdiəm rer/","zh":"三分熟","example":"Steak medium rare, please.","cat":"餐饮日常"},
+{"en":"well done","phonetic":"/wel dʌn/","zh":"全熟","example":"My wife wants hers well done.","cat":"餐饮日常"},
+{"en":"on the rocks","phonetic":"/ɑːn ðə rɑːks/","zh":"加冰","example":"Whiskey on the rocks.","cat":"餐饮日常"},
+{"en":"iced","phonetic":"/aɪst/","zh":"冰的","example":"One iced Americano, please.","cat":"餐饮日常"},
+{"en":"hot","phonetic":"/hɑːt/","zh":"热的","example":"Hot or iced?","cat":"餐饮日常"},
+{"en":"extra hot","phonetic":"/ˈekstrə hɑːt/","zh":"特热","example":"Extra hot latte, please.","cat":"餐饮日常"},
+{"en":"oat milk","phonetic":"/oʊt mɪlk/","zh":"燕麦奶","example":"Latte with oat milk, please.","cat":"餐饮日常"},
+{"en":"almond milk","phonetic":"/ˈɑːmənd mɪlk/","zh":"杏仁奶","example":"Can I switch to almond milk?","cat":"餐饮日常"},
+{"en":"decaf","phonetic":"/ˈdiːkæf/","zh":"低咖啡因","example":"Decaf cappuccino, please.","cat":"餐饮日常"},
+{"en":"extra shot","phonetic":"/ˈekstrə ʃɑːt/","zh":"加一份浓缩","example":"Add an extra shot, please.","cat":"餐饮日常"},
+{"en":"refill","phonetic":"/ˈriːfɪl/","zh":"续杯","example":"Free refills on coffee.","cat":"餐饮日常"},
+{"en":"check, please","phonetic":"/tʃek pliːz/","zh":"买单","example":"Could we get the check, please?","cat":"餐饮日常"},
+{"en":"doggy bag","phonetic":"/ˈdɔːɡi bæɡ/","zh":"打包袋","example":"Could I get a doggy bag?","cat":"餐饮日常"},
+{"en":"to-go box","phonetic":"/tə ɡoʊ bɑːks/","zh":"打包盒","example":"Could you box this up to-go?","cat":"餐饮日常"},
+{"en":"spicy","phonetic":"/ˈspaɪsi/","zh":"辣","example":"Is this dish spicy?","cat":"餐饮日常"},
+{"en":"mild","phonetic":"/maɪld/","zh":"不辣/温和","example":"Mild, please — no chili.","cat":"餐饮日常"},
+{"en":"groceries","phonetic":"/ˈɡroʊsəriz/","zh":"食品杂货","example":"I need to pick up some groceries.","cat":"餐饮日常"},
+{"en":"fresh produce","phonetic":"/freʃ ˈproʊduːs/","zh":"新鲜果蔬","example":"The supermarket has great fresh produce.","cat":"餐饮日常"},
+{"en":"cashier","phonetic":"/kæˈʃɪr/","zh":"收银员","example":"The cashier will help you.","cat":"餐饮日常"},
+{"en":"self-checkout","phonetic":"/self ˈtʃekaʊt/","zh":"自助结账","example":"Use the self-checkout — it's faster.","cat":"餐饮日常"},
+{"en":"out of stock","phonetic":"/aʊt əv stɑːk/","zh":"缺货","example":"Sorry, that item is out of stock.","cat":"餐饮日常"},
+{"en":"How's it going?","phonetic":"/haʊz ɪt ˈɡoʊɪŋ/","zh":"最近怎么样","example":"Hey, how's it going?","cat":"社交闲聊"},
+{"en":"What's up?","phonetic":"/wʌts ʌp/","zh":"怎么了/嗨","example":"Hey, what's up?","cat":"社交闲聊"},
+{"en":"Long time no see","phonetic":"/lɔːŋ taɪm noʊ siː/","zh":"好久不见","example":"Wow, long time no see!","cat":"社交闲聊"},
+{"en":"How have you been?","phonetic":"/haʊ həv juː bɪn/","zh":"你最近如何","example":"It's been a while — how have you been?","cat":"社交闲聊"},
+{"en":"Not too bad","phonetic":"/nɑːt tuː bæd/","zh":"还行","example":"Not too bad, can't complain.","cat":"社交闲聊"},
+{"en":"Can't complain","phonetic":"/kænt kəmˈpleɪn/","zh":"还行/没啥可抱怨","example":"Pretty good, can't complain.","cat":"社交闲聊"},
+{"en":"Same old, same old","phonetic":"/seɪm oʊld seɪm oʊld/","zh":"老样子","example":"Just the same old, same old.","cat":"社交闲聊"},
+{"en":"Same here","phonetic":"/seɪm hɪr/","zh":"我也是","example":"I love Italian food. — Same here!","cat":"社交闲聊"},
+{"en":"Glad to hear that","phonetic":"/ɡlæd tə hɪr ðæt/","zh":"听到这个真高兴","example":"You got the job? Glad to hear that!","cat":"社交闲聊"},
+{"en":"That's great","phonetic":"/ðæts ɡreɪt/","zh":"太好了","example":"That's great — congrats!","cat":"社交闲聊"},
+{"en":"Any plans for the weekend?","phonetic":"/ˈeni plænz fər ðə ˈwiːkend/","zh":"周末有安排吗","example":"So, any plans for the weekend?","cat":"社交闲聊"},
+{"en":"What do you do?","phonetic":"/wʌt də juː duː/","zh":"你做什么工作","example":"So what do you do for a living?","cat":"社交闲聊"},
+{"en":"Where are you from?","phonetic":"/wer ɑːr juː frʌm/","zh":"你哪里人","example":"Where are you from originally?","cat":"社交闲聊"},
+{"en":"No way!","phonetic":"/noʊ weɪ/","zh":"不会吧","example":"No way! That's amazing.","cat":"社交闲聊"},
+{"en":"You're kidding!","phonetic":"/jʊr ˈkɪdɪŋ/","zh":"开玩笑吧","example":"You're kidding — really?","cat":"社交闲聊"},
+{"en":"Tell me about it","phonetic":"/tel miː əˈbaʊt ɪt/","zh":"可不是嘛/我懂","example":"Mondays are the worst. — Tell me about it!","cat":"社交闲聊"},
+{"en":"Sounds fun","phonetic":"/saʊndz fʌn/","zh":"听起来不错","example":"A weekend in Lisbon? Sounds fun.","cat":"社交闲聊"},
+{"en":"Gotcha","phonetic":"/ˈɡɑːtʃə/","zh":"懂了","example":"Gotcha, thanks for the heads up.","cat":"社交闲聊"},
+{"en":"Take care","phonetic":"/teɪk ker/","zh":"保重","example":"Anyway, take care!","cat":"社交闲聊"},
+{"en":"See you around","phonetic":"/siː juː əˈraʊnd/","zh":"回头见","example":"OK, see you around!","cat":"社交闲聊"},
+{"en":"Catch you later","phonetic":"/kætʃ juː ˈleɪtər/","zh":"回头聊","example":"Gotta run — catch you later!","cat":"社交闲聊"},
+{"en":"Have a good one","phonetic":"/hæv ə ɡʊd wʌn/","zh":"祝你今天愉快","example":"Thanks, have a good one!","cat":"社交闲聊"},
+{"en":"small talk","phonetic":"/smɔːl tɔːk/","zh":"闲聊","example":"I'm not great at small talk.","cat":"社交闲聊"},
+{"en":"break the ice","phonetic":"/breɪk ði aɪs/","zh":"打破僵局","example":"A joke can help break the ice.","cat":"社交闲聊"},
+{"en":"My pleasure","phonetic":"/maɪ ˈpleʒər/","zh":"很荣幸/不客气","example":"Thanks so much! — My pleasure.","cat":"社交闲聊"},
+{"en":"wake up","phonetic":"/weɪk ʌp/","zh":"醒来","example":"I usually wake up at 7.","cat":"日常生活"},
+{"en":"get up","phonetic":"/ɡet ʌp/","zh":"起床","example":"I can't get up this early.","cat":"日常生活"},
+{"en":"go to bed","phonetic":"/ɡoʊ tə bed/","zh":"上床睡觉","example":"I usually go to bed around 11.","cat":"日常生活"},
+{"en":"fall asleep","phonetic":"/fɔːl əˈsliːp/","zh":"入睡","example":"I fell asleep on the train.","cat":"日常生活"},
+{"en":"oversleep","phonetic":"/ˌoʊvərˈsliːp/","zh":"睡过头","example":"I overslept and missed the meeting.","cat":"日常生活"},
+{"en":"snooze","phonetic":"/snuːz/","zh":"贪睡/按掉闹钟","example":"I keep hitting snooze.","cat":"日常生活"},
+{"en":"set an alarm","phonetic":"/set ən əˈlɑːrm/","zh":"定闹钟","example":"Did you set an alarm for 6?","cat":"日常生活"},
+{"en":"take a shower","phonetic":"/teɪk ə ˈʃaʊər/","zh":"洗澡","example":"Let me take a quick shower first.","cat":"日常生活"},
+{"en":"brush my teeth","phonetic":"/brʌʃ maɪ tiːθ/","zh":"刷牙","example":"I brush my teeth twice a day.","cat":"日常生活"},
+{"en":"get dressed","phonetic":"/ɡet drest/","zh":"穿衣服","example":"Give me 5 minutes to get dressed.","cat":"日常生活"},
+{"en":"commute","phonetic":"/kəˈmjuːt/","zh":"通勤","example":"My commute takes about an hour.","cat":"日常生活"},
+{"en":"head home","phonetic":"/hed hoʊm/","zh":"回家","example":"I'm heading home now.","cat":"日常生活"},
+{"en":"run errands","phonetic":"/rʌn ˈerəndz/","zh":"跑腿办事","example":"I have a few errands to run.","cat":"日常生活"},
+{"en":"do laundry","phonetic":"/duː ˈlɔːndri/","zh":"洗衣服","example":"I have to do laundry tonight.","cat":"日常生活"},
+{"en":"take out the trash","phonetic":"/teɪk aʊt ðə træʃ/","zh":"倒垃圾","example":"Don't forget to take out the trash.","cat":"日常生活"},
+{"en":"pick up the kids","phonetic":"/pɪk ʌp ðə kɪdz/","zh":"接孩子","example":"I have to pick up the kids at 4.","cat":"日常生活"},
+{"en":"work from home","phonetic":"/wɜːrk frəm hoʊm/","zh":"居家办公","example":"I'm working from home today.","cat":"日常生活"},
+{"en":"humid","phonetic":"/ˈhjuːmɪd/","zh":"潮湿","example":"It's so humid today.","cat":"天气时间"},
+{"en":"dry","phonetic":"/draɪ/","zh":"干燥","example":"The air is really dry up here.","cat":"天气时间"},
+{"en":"breezy","phonetic":"/ˈbriːzi/","zh":"微风","example":"It's a nice breezy afternoon.","cat":"天气时间"},
+{"en":"freezing","phonetic":"/ˈfriːzɪŋ/","zh":"冰冷","example":"It's freezing outside!","cat":"天气时间"},
+{"en":"scorching","phonetic":"/ˈskɔːrtʃɪŋ/","zh":"酷热","example":"Scorching summer day — stay indoors.","cat":"天气时间"},
+{"en":"drizzle","phonetic":"/ˈdrɪzəl/","zh":"毛毛雨","example":"There's a light drizzle outside.","cat":"天气时间"},
+{"en":"downpour","phonetic":"/ˈdaʊnpɔːr/","zh":"倾盆大雨","example":"We got caught in a downpour.","cat":"天气时间"},
+{"en":"forecast","phonetic":"/ˈfɔːrkæst/","zh":"天气预报","example":"The forecast says rain tomorrow.","cat":"天气时间"},
+{"en":"ahead of time","phonetic":"/əˈhed əv taɪm/","zh":"提前","example":"Let's confirm ahead of time.","cat":"天气时间"},
+{"en":"just in time","phonetic":"/dʒʌst ɪn taɪm/","zh":"刚好赶上","example":"You arrived just in time!","cat":"天气时间"},
+{"en":"in the meantime","phonetic":"/ɪn ðə ˈmiːntaɪm/","zh":"与此同时","example":"In the meantime, please review the proposal.","cat":"天气时间"},
+{"en":"give me a sec","phonetic":"/ɡɪv miː ə sek/","zh":"等我一下","example":"Give me a sec, I'll check.","cat":"天气时间"},
+{"en":"right away","phonetic":"/raɪt əˈweɪ/","zh":"立刻","example":"I'll send it right away.","cat":"天气时间"},
+{"en":"sooner or later","phonetic":"/ˈsuːnər ɔːr ˈleɪtər/","zh":"迟早","example":"Sooner or later, prices will go up.","cat":"天气时间"},
+{"en":"discount","phonetic":"/ˈdɪskaʊnt/","zh":"折扣","example":"Is there a discount for groups?","cat":"购物消费"},
+{"en":"on sale","phonetic":"/ɑːn seɪl/","zh":"打折中","example":"This jacket is on sale.","cat":"购物消费"},
+{"en":"receipt","phonetic":"/rɪˈsiːt/","zh":"收据","example":"Could I have a receipt, please?","cat":"购物消费"},
+{"en":"refund","phonetic":"/ˈriːfʌnd/","zh":"退款","example":"Can I get a refund?","cat":"购物消费"},
+{"en":"exchange","phonetic":"/ɪksˈtʃeɪndʒ/","zh":"换货","example":"Can I exchange this for a smaller size?","cat":"购物消费"},
+{"en":"try on","phonetic":"/traɪ ɑːn/","zh":"试穿","example":"Can I try this on?","cat":"购物消费"},
+{"en":"fitting room","phonetic":"/ˈfɪtɪŋ ruːm/","zh":"试衣间","example":"Where's the fitting room?","cat":"购物消费"},
+{"en":"contactless","phonetic":"/ˈkɑːntæktləs/","zh":"非接触支付","example":"Contactless payment, please.","cat":"购物消费"},
+{"en":"tap to pay","phonetic":"/tæp tə peɪ/","zh":"拍卡支付","example":"You can tap to pay here.","cat":"购物消费"},
+{"en":"tight budget","phonetic":"/taɪt ˈbʌdʒɪt/","zh":"预算紧","example":"My client is on a tight budget.","cat":"购物消费"},
+{"en":"splurge","phonetic":"/splɜːrdʒ/","zh":"奢侈一次/破费","example":"Let's splurge on a fancy dinner.","cat":"购物消费"},
+{"en":"a bargain","phonetic":"/ə ˈbɑːrɡɪn/","zh":"超划算","example":"€50 a night? That's a bargain!","cat":"购物消费"},
+{"en":"pricey","phonetic":"/ˈpraɪsi/","zh":"价格偏高","example":"That hotel is a bit pricey.","cat":"购物消费"},
+{"en":"affordable","phonetic":"/əˈfɔːrdəbəl/","zh":"价格合理","example":"We need something more affordable.","cat":"购物消费"},
+{"en":"increase","phonetic":"/ɪnˈkriːs/","zh":"增加","example":"The number of users increased by 20% from 2010 to 2020.","cat":"雅思·图表"},
+{"en":"decrease","phonetic":"/dɪˈkriːs/","zh":"减少","example":"The unemployment rate decreased significantly.","cat":"雅思·图表"},
+{"en":"rise","phonetic":"/raɪz/","zh":"上升","example":"There was a sharp rise in sales.","cat":"雅思·图表"},
+{"en":"fall","phonetic":"/fɔːl/","zh":"下降","example":"Profits fell by half over the period.","cat":"雅思·图表"},
+{"en":"fluctuate","phonetic":"/ˈflʌktʃueɪt/","zh":"波动","example":"The price fluctuated between $50 and $80.","cat":"雅思·图表"},
+{"en":"remain stable","phonetic":"/rɪˈmeɪn ˈsteɪbəl/","zh":"保持稳定","example":"The figure remained stable at around 30%.","cat":"雅思·图表"},
+{"en":"level off","phonetic":"/ˈlevəl ɔːf/","zh":"趋平","example":"The trend leveled off after 2015.","cat":"雅思·图表"},
+{"en":"plateau","phonetic":"/plæˈtoʊ/","zh":"平稳期","example":"The graph reached a plateau in 2018.","cat":"雅思·图表"},
+{"en":"peak","phonetic":"/piːk/","zh":"峰值/达到顶峰","example":"Sales peaked at 5,000 units in March.","cat":"雅思·图表"},
+{"en":"hit a low","phonetic":"/hɪt ə loʊ/","zh":"触底","example":"Numbers hit a low in 2009.","cat":"雅思·图表"},
+{"en":"dramatically","phonetic":"/drəˈmætɪkli/","zh":"急剧地","example":"Prices rose dramatically in the 1990s.","cat":"雅思·图表"},
+{"en":"significantly","phonetic":"/sɪɡˈnɪfɪkəntli/","zh":"显著地","example":"The figure dropped significantly.","cat":"雅思·图表"},
+{"en":"slightly","phonetic":"/ˈslaɪtli/","zh":"略微","example":"Sales slightly increased last quarter.","cat":"雅思·图表"},
+{"en":"gradually","phonetic":"/ˈɡrædʒuəli/","zh":"逐渐","example":"The population grew gradually over the decade.","cat":"雅思·图表"},
+{"en":"sharply","phonetic":"/ˈʃɑːrpli/","zh":"急剧","example":"Demand rose sharply during the holidays.","cat":"雅思·图表"},
+{"en":"steadily","phonetic":"/ˈstedɪli/","zh":"稳步","example":"The economy grew steadily.","cat":"雅思·图表"},
+{"en":"rapidly","phonetic":"/ˈræpɪdli/","zh":"迅速","example":"Internet usage expanded rapidly.","cat":"雅思·图表"},
+{"en":"approximately","phonetic":"/əˈprɑːksɪmətli/","zh":"大约","example":"Approximately 1,000 people attended.","cat":"雅思·图表"},
+{"en":"account for","phonetic":"/əˈkaʊnt fɔːr/","zh":"占比","example":"Renewable energy accounts for 30% of total.","cat":"雅思·图表"},
+{"en":"make up","phonetic":"/meɪk ʌp/","zh":"构成","example":"Women make up half of the workforce.","cat":"雅思·图表"},
+{"en":"outnumber","phonetic":"/aʊtˈnʌmbər/","zh":"数量超过","example":"Cars outnumber bikes in the city.","cat":"雅思·图表"},
+{"en":"compared with","phonetic":"/kəmˈperd wɪð/","zh":"相比之下","example":"Compared with 2010, the figure doubled.","cat":"雅思·图表"},
+{"en":"in contrast","phonetic":"/ɪn ˈkɑːntræst/","zh":"与之相反","example":"In contrast, rural areas saw a decline.","cat":"雅思·图表"},
+{"en":"respectively","phonetic":"/rɪˈspektɪvli/","zh":"分别","example":"Sales were 200 and 300 units respectively.","cat":"雅思·图表"},
+{"en":"depict","phonetic":"/dɪˈpɪkt/","zh":"描绘","example":"The chart depicts trends in education.","cat":"雅思·图表"},
+{"en":"illustrate","phonetic":"/ˈɪləstreɪt/","zh":"显示","example":"The graph illustrates monthly sales.","cat":"雅思·图表"},
+{"en":"overall","phonetic":"/ˌoʊvərˈɔːl/","zh":"总体而言","example":"Overall, urban populations grew.","cat":"雅思·图表"},
+{"en":"trend","phonetic":"/trend/","zh":"趋势","example":"The overall trend is upward.","cat":"雅思·图表"},
+{"en":"proportion","phonetic":"/prəˈpɔːrʃən/","zh":"比例","example":"A large proportion of people prefer tea.","cat":"雅思·图表"},
+{"en":"figure","phonetic":"/ˈfɪɡjər/","zh":"数据/数字","example":"The figure for 2020 was the highest.","cat":"雅思·图表"},
+{"en":"furthermore","phonetic":"/ˌfɜːrðərˈmɔːr/","zh":"此外","example":"Furthermore, public transport reduces pollution.","cat":"雅思·议论文"},
+{"en":"moreover","phonetic":"/mɔːrˈoʊvər/","zh":"此外","example":"Moreover, it is cost-effective.","cat":"雅思·议论文"},
+{"en":"however","phonetic":"/haʊˈevər/","zh":"然而","example":"However, there are some drawbacks.","cat":"雅思·议论文"},
+{"en":"nevertheless","phonetic":"/ˌnevərðəˈles/","zh":"然而","example":"Nevertheless, the policy has merits.","cat":"雅思·议论文"},
+{"en":"consequently","phonetic":"/ˈkɑːnsəkwentli/","zh":"因此","example":"Consequently, more people stay at home.","cat":"雅思·议论文"},
+{"en":"therefore","phonetic":"/ˈðerfɔːr/","zh":"因此","example":"Therefore, education must adapt.","cat":"雅思·议论文"},
+{"en":"thus","phonetic":"/ðʌs/","zh":"因此","example":"Thus, governments should intervene.","cat":"雅思·议论文"},
+{"en":"advocate","phonetic":"/ˈædvəkeɪt/","zh":"主张/倡导","example":"Many experts advocate stricter laws.","cat":"雅思·议论文"},
+{"en":"argue","phonetic":"/ˈɑːrɡjuː/","zh":"主张/认为","example":"Some argue that technology isolates us.","cat":"雅思·议论文"},
+{"en":"claim","phonetic":"/kleɪm/","zh":"声称","example":"Critics claim the policy is unfair.","cat":"雅思·议论文"},
+{"en":"maintain","phonetic":"/meɪnˈteɪn/","zh":"坚持认为","example":"Supporters maintain that it benefits all.","cat":"雅思·议论文"},
+{"en":"advantage","phonetic":"/ədˈvæntɪdʒ/","zh":"优势","example":"One advantage is improved efficiency.","cat":"雅思·议论文"},
+{"en":"drawback","phonetic":"/ˈdrɔːbæk/","zh":"弊端","example":"A major drawback is the high cost.","cat":"雅思·议论文"},
+{"en":"benefit","phonetic":"/ˈbenɪfɪt/","zh":"益处","example":"The benefits outweigh the costs.","cat":"雅思·议论文"},
+{"en":"downside","phonetic":"/ˈdaʊnsaɪd/","zh":"缺点","example":"The downside is the loss of privacy.","cat":"雅思·议论文"},
+{"en":"lead to","phonetic":"/liːd tə/","zh":"导致","example":"Pollution leads to health problems.","cat":"雅思·议论文"},
+{"en":"result in","phonetic":"/rɪˈzʌlt ɪn/","zh":"导致","example":"Stress can result in serious illness.","cat":"雅思·议论文"},
+{"en":"contribute to","phonetic":"/kənˈtrɪbjuːt tə/","zh":"促成","example":"Renewable energy contributes to sustainability.","cat":"雅思·议论文"},
+{"en":"stem from","phonetic":"/stem frəm/","zh":"源于","example":"The issue stems from poor planning.","cat":"雅思·议论文"},
+{"en":"in my view","phonetic":"/ɪn maɪ vjuː/","zh":"在我看来","example":"In my view, education is the key.","cat":"雅思·议论文"},
+{"en":"it can be argued","phonetic":"/ɪt kən bi ˈɑːrɡjuːd/","zh":"可以说","example":"It can be argued that both have merits.","cat":"雅思·议论文"},
+{"en":"undoubtedly","phonetic":"/ʌnˈdaʊtɪdli/","zh":"毫无疑问","example":"Undoubtedly, technology has changed lives.","cat":"雅思·议论文"},
+{"en":"although","phonetic":"/ɔːlˈðoʊ/","zh":"虽然","example":"Although it is expensive, it is worth it.","cat":"雅思·议论文"},
+{"en":"despite","phonetic":"/dɪˈspaɪt/","zh":"尽管","example":"Despite criticism, the law passed.","cat":"雅思·议论文"},
+{"en":"in spite of","phonetic":"/ɪn spaɪt əv/","zh":"尽管","example":"In spite of difficulties, they succeeded.","cat":"雅思·议论文"},
+{"en":"in conclusion","phonetic":"/ɪn kənˈkluːʒən/","zh":"综上所述","example":"In conclusion, both sides have merit.","cat":"雅思·议论文"},
+{"en":"to sum up","phonetic":"/tə sʌm ʌp/","zh":"总而言之","example":"To sum up, action is needed.","cat":"雅思·议论文"},
+{"en":"on balance","phonetic":"/ɑːn ˈbæləns/","zh":"总的来说","example":"On balance, the benefits outweigh the risks.","cat":"雅思·议论文"},
+{"en":"address an issue","phonetic":"/əˈdres ən ˈɪʃuː/","zh":"解决问题","example":"We must address this issue urgently.","cat":"雅思·议论文"},
+{"en":"undermine","phonetic":"/ˌʌndərˈmaɪn/","zh":"削弱/破坏","example":"This policy undermines public trust.","cat":"雅思·议论文"},
+{"en":"hometown","phonetic":"/ˈhoʊmtaʊn/","zh":"家乡","example":"My hometown is a small city in southern China.","cat":"雅思·口语"},
+{"en":"residential area","phonetic":"/ˌrezɪˈdenʃəl ˈeriə/","zh":"居民区","example":"I live in a quiet residential area.","cat":"雅思·口语"},
+{"en":"downtown","phonetic":"/ˈdaʊntaʊn/","zh":"市中心","example":"I work downtown.","cat":"雅思·口语"},
+{"en":"suburban","phonetic":"/səˈbɜːrbən/","zh":"郊区的","example":"We moved to a suburban neighborhood.","cat":"雅思·口语"},
+{"en":"metropolis","phonetic":"/məˈtrɑːpəlɪs/","zh":"大都市","example":"Shanghai is a vibrant metropolis.","cat":"雅思·口语"},
+{"en":"rural","phonetic":"/ˈrʊrəl/","zh":"农村的","example":"I grew up in a rural village.","cat":"雅思·口语"},
+{"en":"urban","phonetic":"/ˈɜːrbən/","zh":"城市的","example":"Urban life is fast-paced.","cat":"雅思·口语"},
+{"en":"hobby","phonetic":"/ˈhɑːbi/","zh":"爱好","example":"My main hobby is photography.","cat":"雅思·口语"},
+{"en":"leisure","phonetic":"/ˈliːʒər/","zh":"休闲","example":"I enjoy leisure activities like hiking.","cat":"雅思·口语"},
+{"en":"pastime","phonetic":"/ˈpæstaɪm/","zh":"消遣","example":"Reading is a great pastime.","cat":"雅思·口语"},
+{"en":"unwind","phonetic":"/ʌnˈwaɪnd/","zh":"放松","example":"I unwind by listening to music.","cat":"雅思·口语"},
+{"en":"cuisine","phonetic":"/kwɪˈziːn/","zh":"菜系","example":"Italian cuisine is my favorite.","cat":"雅思·口语"},
+{"en":"immerse oneself in","phonetic":"/ɪˈmɜːrs/","zh":"沉浸于","example":"I love to immerse myself in nature.","cat":"雅思·口语"},
+{"en":"fond of","phonetic":"/fɑːnd əv/","zh":"喜欢","example":"I'm very fond of jazz music.","cat":"雅思·口语"},
+{"en":"keen on","phonetic":"/kiːn ɑːn/","zh":"热衷","example":"I'm keen on learning languages.","cat":"雅思·口语"},
+{"en":"nuclear family","phonetic":"/ˈnuːkliər ˈfæməli/","zh":"核心家庭","example":"I come from a nuclear family of three.","cat":"雅思·口语"},
+{"en":"extended family","phonetic":"/ɪkˈstendɪd ˈfæməli/","zh":"大家庭","example":"We have a large extended family.","cat":"雅思·口语"},
+{"en":"sibling","phonetic":"/ˈsɪblɪŋ/","zh":"兄弟姐妹","example":"I have one sibling, a younger sister.","cat":"雅思·口语"},
+{"en":"get along with","phonetic":"/ɡet əˈlɔːŋ wɪð/","zh":"相处","example":"I get along well with my colleagues.","cat":"雅思·口语"},
+{"en":"major in","phonetic":"/ˈmeɪdʒər ɪn/","zh":"主修","example":"I'm majoring in computer science.","cat":"雅思·口语"},
+{"en":"demanding","phonetic":"/dɪˈmændɪŋ/","zh":"要求高的","example":"It's a demanding job.","cat":"雅思·口语"},
+{"en":"rewarding","phonetic":"/rɪˈwɔːrdɪŋ/","zh":"有意义的","example":"Teaching is very rewarding.","cat":"雅思·口语"},
+{"en":"fascinating","phonetic":"/ˈfæsɪneɪtɪŋ/","zh":"引人入胜的","example":"I find history fascinating.","cat":"雅思·口语"},
+{"en":"time-consuming","phonetic":"/taɪm kənˈsuːmɪŋ/","zh":"耗时","example":"Cooking from scratch is time-consuming.","cat":"雅思·口语"},
+{"en":"breathtaking","phonetic":"/ˈbreθteɪkɪŋ/","zh":"令人惊叹","example":"The view was breathtaking.","cat":"雅思·口语"},
+{"en":"stunning","phonetic":"/ˈstʌnɪŋ/","zh":"极美","example":"The architecture is stunning.","cat":"雅思·口语"},
+{"en":"broaden one's horizons","phonetic":"/ˈbrɔːdən hərˈaɪzənz/","zh":"开阔视野","example":"Travel helps to broaden one's horizons.","cat":"雅思·口语"},
+{"en":"destination","phonetic":"/ˌdestɪˈneɪʃən/","zh":"目的地","example":"Italy is a popular destination.","cat":"雅思·口语"},
+{"en":"sightseeing","phonetic":"/ˈsaɪtsiːɪŋ/","zh":"观光","example":"We spent the day sightseeing.","cat":"雅思·口语"},
+{"en":"cope with","phonetic":"/koʊp wɪð/","zh":"应对","example":"I learned to cope with stress.","cat":"雅思·口语"},
+{"en":"on the whole","phonetic":"/ɑːn ðə hoʊl/","zh":"总体而言","example":"On the whole, I enjoy my work.","cat":"雅思·口语"},
+{"en":"to be honest","phonetic":"/tə bi ˈɑːnɪst/","zh":"老实说","example":"To be honest, I prefer staying in.","cat":"雅思·口语"},
+{"en":"it depends","phonetic":"/ɪt dɪˈpendz/","zh":"看情况","example":"It depends on the weather.","cat":"雅思·口语"},
+{"en":"in terms of","phonetic":"/ɪn tɜːrmz əv/","zh":"在……方面","example":"In terms of food, Beijing is amazing.","cat":"雅思·口语"},
+{"en":"as far as I'm concerned","phonetic":"/əz fɑːr əz aɪm kənˈsɜːrnd/","zh":"就我而言","example":"As far as I'm concerned, it's worth it.","cat":"雅思·口语"},
+{"en":"for instance","phonetic":"/fər ˈɪnstəns/","zh":"例如","example":"For instance, take social media.","cat":"雅思·口语"},
+{"en":"that's a tricky one","phonetic":"/ðæts ə ˈtrɪki wʌn/","zh":"这个有点难","example":"That's a tricky one. Let me think.","cat":"雅思·口语"},
+{"en":"I'd rather","phonetic":"/aɪd ˈræðər/","zh":"我宁愿","example":"I'd rather stay home tonight.","cat":"雅思·口语"},
+{"en":"a great deal of","phonetic":"/ə ɡreɪt diːl əv/","zh":"大量","example":"It takes a great deal of practice.","cat":"雅思·口语"},
+{"en":"vivid memory","phonetic":"/ˈvɪvɪd ˈmeməri/","zh":"鲜明的回忆","example":"I have vivid memories of that summer.","cat":"雅思·口语"},
+{"en":"can't help but","phonetic":"/kænt help bʌt/","zh":"忍不住","example":"I can't help but admire her courage.","cat":"雅思·口语"},
+{"en":"postcode","phonetic":"/ˈpoʊstkoʊd/","zh":"邮编","example":"What's your postcode?","cat":"雅思·听力"},
+{"en":"register","phonetic":"/ˈredʒɪstər/","zh":"注册","example":"Please register at the front desk.","cat":"雅思·听力"},
+{"en":"application","phonetic":"/ˌæplɪˈkeɪʃən/","zh":"申请","example":"Submit your application by Friday.","cat":"雅思·听力"},
+{"en":"deposit","phonetic":"/dɪˈpɑːzɪt/","zh":"押金","example":"A deposit of $100 is required.","cat":"雅思·听力"},
+{"en":"refund","phonetic":"/ˈriːfʌnd/","zh":"退款","example":"You can request a refund within 14 days.","cat":"雅思·听力"},
+{"en":"tutorial","phonetic":"/tuːˈtɔːriəl/","zh":"辅导课","example":"I have a tutorial at 2 PM.","cat":"雅思·听力"},
+{"en":"lecture","phonetic":"/ˈlektʃər/","zh":"讲座","example":"The lecture is in the main hall.","cat":"雅思·听力"},
+{"en":"seminar","phonetic":"/ˈsemɪnɑːr/","zh":"研讨会","example":"We have a seminar every Tuesday.","cat":"雅思·听力"},
+{"en":"assignment","phonetic":"/əˈsaɪnmənt/","zh":"作业","example":"The assignment is due next week.","cat":"雅思·听力"},
+{"en":"dissertation","phonetic":"/ˌdɪsərˈteɪʃən/","zh":"毕业论文","example":"I'm working on my dissertation.","cat":"雅思·听力"},
+{"en":"scholarship","phonetic":"/ˈskɑːlərʃɪp/","zh":"奖学金","example":"She received a full scholarship.","cat":"雅思·听力"},
+{"en":"dormitory","phonetic":"/ˈdɔːrmətɔːri/","zh":"宿舍","example":"He lives in the dormitory.","cat":"雅思·听力"},
+{"en":"accommodation","phonetic":"/əˌkɑːməˈdeɪʃən/","zh":"住宿","example":"On-campus accommodation is limited.","cat":"雅思·听力"},
+{"en":"itinerary","phonetic":"/aɪˈtɪnəreri/","zh":"行程","example":"Please confirm the itinerary.","cat":"雅思·听力"},
+{"en":"transit","phonetic":"/ˈtrænzɪt/","zh":"中转","example":"We have a 2-hour transit in Doha.","cat":"雅思·听力"},
+{"en":"fare","phonetic":"/fer/","zh":"票价","example":"What's the fare to the airport?","cat":"雅思·听力"},
+{"en":"appointment","phonetic":"/əˈpɔɪntmənt/","zh":"预约","example":"I have an appointment at 3.","cat":"雅思·听力"},
+{"en":"prescription","phonetic":"/prɪˈskrɪpʃən/","zh":"处方","example":"Pick up the prescription at the pharmacy.","cat":"雅思·听力"},
+{"en":"symptom","phonetic":"/ˈsɪmptəm/","zh":"症状","example":"Describe your symptoms.","cat":"雅思·听力"},
+{"en":"vacancy","phonetic":"/ˈveɪkənsi/","zh":"空缺","example":"There's a vacancy in the office.","cat":"雅思·听力"},
+{"en":"internship","phonetic":"/ˈɪntɜːrnʃɪp/","zh":"实习","example":"He's doing an internship at IBM.","cat":"雅思·听力"},
+{"en":"CV","phonetic":"/ˌsiː ˈviː/","zh":"简历","example":"Please send your CV.","cat":"雅思·听力"},
+{"en":"qualification","phonetic":"/ˌkwɑːlɪfɪˈkeɪʃən/","zh":"资格","example":"What qualifications do you have?","cat":"雅思·听力"},
+{"en":"salary","phonetic":"/ˈsæləri/","zh":"薪水","example":"The salary is competitive.","cat":"雅思·听力"},
+{"en":"fortnight","phonetic":"/ˈfɔːrtnaɪt/","zh":"两周","example":"I'll be away for a fortnight.","cat":"雅思·听力"},
+{"en":"workshop","phonetic":"/ˈwɜːrkʃɑːp/","zh":"工作坊","example":"Sign up for the writing workshop.","cat":"雅思·听力"},
+{"en":"brochure","phonetic":"/broʊˈʃʊr/","zh":"宣传册","example":"Take a brochure on your way out.","cat":"雅思·听力"},
+{"en":"premises","phonetic":"/ˈpremɪsɪz/","zh":"房产/场地","example":"No smoking on the premises.","cat":"雅思·听力"},
+{"en":"due date","phonetic":"/duː deɪt/","zh":"截止日期","example":"When is the assignment due?","cat":"雅思·听力"},
+{"en":"venue","phonetic":"/ˈvenjuː/","zh":"场地","example":"The venue holds 500 people.","cat":"雅思·听力"},
+{"en":"analyze","phonetic":"/ˈænəlaɪz/","zh":"分析","example":"Researchers analyze the data.","cat":"雅思·阅读"},
+{"en":"evaluate","phonetic":"/ɪˈvæljueɪt/","zh":"评估","example":"Critics evaluate the impact.","cat":"雅思·阅读"},
+{"en":"examine","phonetic":"/ɪɡˈzæmɪn/","zh":"检查","example":"Scientists examine the samples.","cat":"雅思·阅读"},
+{"en":"identify","phonetic":"/aɪˈdentɪfaɪ/","zh":"识别","example":"We need to identify the cause.","cat":"雅思·阅读"},
+{"en":"indicate","phonetic":"/ˈɪndɪkeɪt/","zh":"表明","example":"The results indicate a strong link.","cat":"雅思·阅读"},
+{"en":"phenomenon","phonetic":"/fəˈnɑːmɪnən/","zh":"现象","example":"This is a global phenomenon.","cat":"雅思·阅读"},
+{"en":"hypothesis","phonetic":"/haɪˈpɑːθəsɪs/","zh":"假设","example":"The hypothesis was tested.","cat":"雅思·阅读"},
+{"en":"theory","phonetic":"/ˈθɪri/","zh":"理论","example":"His theory was widely accepted.","cat":"雅思·阅读"},
+{"en":"evidence","phonetic":"/ˈevɪdəns/","zh":"证据","example":"There is little evidence to support it.","cat":"雅思·阅读"},
+{"en":"criteria","phonetic":"/kraɪˈtɪriə/","zh":"标准","example":"The selection criteria are strict.","cat":"雅思·阅读"},
+{"en":"principle","phonetic":"/ˈprɪnsəpəl/","zh":"原则","example":"The principle of fairness applies.","cat":"雅思·阅读"},
+{"en":"society","phonetic":"/səˈsaɪəti/","zh":"社会","example":"Modern society faces many challenges.","cat":"雅思·阅读"},
+{"en":"community","phonetic":"/kəˈmjuːnəti/","zh":"社区","example":"The local community supported the plan.","cat":"雅思·阅读"},
+{"en":"urbanization","phonetic":"/ˌɜːrbənɪˈzeɪʃən/","zh":"城市化","example":"Rapid urbanization causes problems.","cat":"雅思·阅读"},
+{"en":"globalization","phonetic":"/ˌɡloʊbələˈzeɪʃən/","zh":"全球化","example":"Globalization affects all countries.","cat":"雅思·阅读"},
+{"en":"demographics","phonetic":"/ˌdeməˈɡræfɪks/","zh":"人口结构","example":"Changing demographics impact policy.","cat":"雅思·阅读"},
+{"en":"research","phonetic":"/rɪˈsɜːrtʃ/","zh":"研究","example":"Research shows clear benefits.","cat":"雅思·阅读"},
+{"en":"experiment","phonetic":"/ɪkˈsperɪmənt/","zh":"实验","example":"The experiment failed.","cat":"雅思·阅读"},
+{"en":"finding","phonetic":"/ˈfaɪndɪŋ/","zh":"研究发现","example":"The findings were published.","cat":"雅思·阅读"},
+{"en":"ecosystem","phonetic":"/ˈiːkoʊsɪstəm/","zh":"生态系统","example":"The ecosystem is fragile.","cat":"雅思·阅读"},
+{"en":"biodiversity","phonetic":"/ˌbaɪoʊdaɪˈvɜːrsəti/","zh":"生物多样性","example":"Biodiversity is declining.","cat":"雅思·阅读"},
+{"en":"sustainability","phonetic":"/səˌsteɪnəˈbɪləti/","zh":"可持续性","example":"Sustainability is the key issue.","cat":"雅思·阅读"},
+{"en":"conservation","phonetic":"/ˌkɑːnsərˈveɪʃən/","zh":"保护","example":"Conservation efforts are vital.","cat":"雅思·阅读"},
+{"en":"pollution","phonetic":"/pəˈluːʃən/","zh":"污染","example":"Air pollution causes diseases.","cat":"雅思·阅读"},
+{"en":"emission","phonetic":"/ɪˈmɪʃən/","zh":"排放","example":"Carbon emissions must be reduced.","cat":"雅思·阅读"},
+{"en":"infrastructure","phonetic":"/ˈɪnfrəstrʌktʃər/","zh":"基础设施","example":"The country needs better infrastructure.","cat":"雅思·阅读"},
+{"en":"agriculture","phonetic":"/ˈæɡrɪkʌltʃər/","zh":"农业","example":"Agriculture employs millions.","cat":"雅思·阅读"},
+{"en":"commerce","phonetic":"/ˈkɑːmɜːrs/","zh":"商业","example":"E-commerce has transformed retail.","cat":"雅思·阅读"},
+{"en":"controversial","phonetic":"/ˌkɑːntrəˈvɜːrʃəl/","zh":"有争议的","example":"It's a controversial topic.","cat":"雅思·阅读"},
+{"en":"comprehensive","phonetic":"/ˌkɑːmprɪˈhensɪv/","zh":"全面的","example":"We need a comprehensive plan.","cat":"雅思·阅读"},
+{"en":"sufficient","phonetic":"/səˈfɪʃənt/","zh":"足够的","example":"There is sufficient evidence.","cat":"雅思·阅读"},
+{"en":"considerable","phonetic":"/kənˈsɪdərəbəl/","zh":"相当大的","example":"A considerable amount of money.","cat":"雅思·阅读"},
+{"en":"inevitable","phonetic":"/ɪnˈevɪtəbəl/","zh":"不可避免","example":"Change is inevitable.","cat":"雅思·阅读"},
+{"en":"fundamental","phonetic":"/ˌfʌndəˈmentəl/","zh":"根本的","example":"Education is fundamental.","cat":"雅思·阅读"},
+{"en":"distinct","phonetic":"/dɪˈstɪŋkt/","zh":"截然不同的","example":"Two distinct groups emerged.","cat":"雅思·阅读"},
+{"en":"significant","phonetic":"/sɪɡˈnɪfɪkənt/","zh":"重要的 (=important)","example":"This is a significant discovery.","cat":"雅思·同义替换"},
+{"en":"crucial","phonetic":"/ˈkruːʃəl/","zh":"至关重要的 (=important)","example":"Sleep is crucial for health.","cat":"雅思·同义替换"},
+{"en":"vital","phonetic":"/ˈvaɪtəl/","zh":"必要的 (=important)","example":"Water is vital to life.","cat":"雅思·同义替换"},
+{"en":"essential","phonetic":"/ɪˈsenʃəl/","zh":"必不可少 (=important)","example":"Practice is essential to learning.","cat":"雅思·同义替换"},
+{"en":"pivotal","phonetic":"/ˈpɪvətəl/","zh":"关键的 (=important)","example":"He played a pivotal role.","cat":"雅思·同义替换"},
+{"en":"substantial","phonetic":"/səbˈstænʃəl/","zh":"大量的 (=big/large)","example":"A substantial increase in income.","cat":"雅思·同义替换"},
+{"en":"vast","phonetic":"/væst/","zh":"广阔/巨大 (=big)","example":"A vast majority supported the plan.","cat":"雅思·同义替换"},
+{"en":"immense","phonetic":"/ɪˈmens/","zh":"巨大 (=big)","example":"The pressure is immense.","cat":"雅思·同义替换"},
+{"en":"enormous","phonetic":"/ɪˈnɔːrməs/","zh":"巨大 (=big)","example":"The country has an enormous population.","cat":"雅思·同义替换"},
+{"en":"numerous","phonetic":"/ˈnuːmərəs/","zh":"许多 (=many)","example":"There are numerous reasons.","cat":"雅思·同义替换"},
+{"en":"countless","phonetic":"/ˈkaʊntləs/","zh":"无数 (=many)","example":"He has countless hobbies.","cat":"雅思·同义替换"},
+{"en":"a multitude of","phonetic":"/ə ˈmʌltɪtuːd əv/","zh":"大量 (=many)","example":"A multitude of factors are involved.","cat":"雅思·同义替换"},
+{"en":"demonstrate","phonetic":"/ˈdemənstreɪt/","zh":"证明 (=show)","example":"The data demonstrate a clear pattern.","cat":"雅思·同义替换"},
+{"en":"reveal","phonetic":"/rɪˈviːl/","zh":"揭示 (=show)","example":"The study reveals interesting trends.","cat":"雅思·同义替换"},
+{"en":"issue","phonetic":"/ˈɪʃuː/","zh":"问题 (=problem)","example":"This is a serious issue.","cat":"雅思·同义替换"},
+{"en":"dilemma","phonetic":"/dɪˈlemə/","zh":"困境 (=problem)","example":"They face a difficult dilemma.","cat":"雅思·同义替换"},
+{"en":"challenge","phonetic":"/ˈtʃæləndʒ/","zh":"挑战 (=problem)","example":"Climate change is a global challenge.","cat":"雅思·同义替换"},
+{"en":"obstacle","phonetic":"/ˈɑːbstəkəl/","zh":"障碍 (=problem)","example":"Cost is the main obstacle.","cat":"雅思·同义替换"},
+{"en":"beneficial","phonetic":"/ˌbenɪˈfɪʃəl/","zh":"有益的 (=good)","example":"Exercise is beneficial to health.","cat":"雅思·同义替换"},
+{"en":"favorable","phonetic":"/ˈfeɪvərəbəl/","zh":"有利的 (=good)","example":"The weather was favorable.","cat":"雅思·同义替换"},
+{"en":"detrimental","phonetic":"/ˌdetrɪˈmentəl/","zh":"有害的 (=bad)","example":"Smoking is detrimental to health.","cat":"雅思·同义替换"},
+{"en":"adverse","phonetic":"/ædˈvɜːrs/","zh":"不利的 (=bad)","example":"Adverse effects of pollution.","cat":"雅思·同义替换"},
+{"en":"acquire","phonetic":"/əˈkwaɪər/","zh":"获得 (=get)","example":"Children acquire language quickly.","cat":"雅思·同义替换"},
+{"en":"obtain","phonetic":"/əbˈteɪn/","zh":"获得 (=get)","example":"You can obtain a refund online.","cat":"雅思·同义替换"},
+{"en":"utilize","phonetic":"/ˈjuːtɪlaɪz/","zh":"利用 (=use)","example":"We must utilize our resources wisely.","cat":"雅思·同义替换"},
+{"en":"enhance","phonetic":"/ɪnˈhæns/","zh":"提高 (=improve)","example":"Training enhances performance.","cat":"雅思·同义替换"},
+{"en":"boost","phonetic":"/buːst/","zh":"促进 (=improve)","example":"The plan will boost the economy.","cat":"雅思·同义替换"},
+{"en":"tackle","phonetic":"/ˈtækəl/","zh":"解决 (=solve)","example":"We must tackle climate change.","cat":"雅思·同义替换"},
+{"en":"emphasize","phonetic":"/ˈemfəsaɪz/","zh":"强调 (=stress)","example":"He emphasized the importance of teamwork.","cat":"雅思·同义替换"},
+{"en":"conduct","phonetic":"/kənˈdʌkt/","zh":"进行 (=do, e.g. research)","example":"Scientists conduct experiments.","cat":"雅思·同义替换"},
+{"en":"encounter","phonetic":"/ɪnˈkaʊntər/","zh":"遇到 (=meet/face)","example":"We may encounter difficulties.","cat":"雅思·同义替换"},
+{"en":"eliminate","phonetic":"/ɪˈlɪmɪneɪt/","zh":"消除 (=remove)","example":"Eliminate distractions while studying.","cat":"雅思·同义替换"},
+{"en":"diminish","phonetic":"/dɪˈmɪnɪʃ/","zh":"减少 (=reduce)","example":"The risk has diminished.","cat":"雅思·同义替换"},
+{"en":"profound","phonetic":"/prəˈfaʊnd/","zh":"深远的 (=deep/big)","example":"The book had a profound impact.","cat":"雅思·同义替换"},
+{"en":"impact","phonetic":"/ˈɪmpækt/","zh":"影响 (=effect)","example":"Technology has a huge impact on society.","cat":"雅思·同义替换"}
+];
+
+const sentences = [
+{cat:"邮件",type:"邮件 · 开头",en:"Dear Sir or Madam, I hope this message finds you well.",zh:"尊敬的先生/女士，希望您一切安好。"},
+{cat:"邮件",type:"邮件 · 预订请求",en:"I am writing to inquire about room availability from [date] to [date] for [number] guests.",zh:"我来函询问[日期]至[日期]期间，[人数]位客人的客房情况。"},
+{cat:"邮件",type:"邮件 · 确认",en:"Could you please confirm the reservation details and send me a written confirmation?",zh:"请确认预订详情并发送书面确认单。"},
+{cat:"邮件",type:"邮件 · 催回复",en:"Just following up on my previous email. Could you please advise at your earliest convenience?",zh:"跟进我之前的邮件，请您方便时尽快回复。"},
+{cat:"电话",type:"电话 · 开场",en:"Hello, this is Lin calling from a travel agency. Am I speaking with the reservations team?",zh:"您好，我是旅行社的Lin，请问是预订部吗？"},
+{cat:"电话",type:"电话 · 听不懂",en:"Sorry, could you speak a little more slowly? I want to make sure I have the correct details.",zh:"不好意思，您能说慢一点吗？我想确保信息准确。"},
+{cat:"电话",type:"电话 · 确认",en:"Let me confirm the details with you.",zh:"我跟您确认一下细节。"},
+{cat:"欧洲行程",type:"行程表达",en:"My client will travel from Rome to Florence, then continue to Venice.",zh:"我的客户会从罗马到佛罗伦萨，然后继续前往威尼斯。"},
+{cat:"欧洲行程",type:"行程表达",en:"They will stay in Interlaken for two nights and take a day trip to Jungfraujoch.",zh:"他们会在因特拉肯住两晚，并安排少女峰一日游。"},
+{cat:"欧洲行程",type:"行程表达",en:"This itinerary is designed to avoid backtracking.",zh:"这个行程设计是为了避免走回头路。"},
+{cat:"商务邮件",type:"邮件 · 询价",en:"Could you please share your best available rates and any agency commission for these dates?",zh:"请发您这段日期的最优房价，以及给同行的佣金政策。"},
+{cat:"商务邮件",type:"邮件 · 议价",en:"We are a long-term partner and would appreciate a more competitive net rate.",zh:"我们是长期合作伙伴，希望能获得更有竞争力的净价。"},
+{cat:"商务邮件",type:"邮件 · 询付款",en:"Could you confirm the payment terms and the deposit required to secure the booking?",zh:"请确认付款条件以及确认预订所需的订金。"},
+{cat:"商务邮件",type:"邮件 · 修改预订",en:"We would like to amend the existing booking under [name]: new dates [start] – [end].",zh:"我们想修改[姓名]名下的预订，新日期为[开始]–[结束]。"},
+{cat:"商务邮件",type:"邮件 · 取消",en:"Please cancel the reservation and confirm any cancellation charges in writing.",zh:"请取消该预订，并书面确认是否有取消费用。"},
+{cat:"商务邮件",type:"邮件 · 客户特殊要求",en:"My client has the following dietary restrictions: [list]. Please advise if the kitchen can accommodate.",zh:"我的客户有以下饮食限制：[列表]。请告知厨房能否安排。"},
+{cat:"商务邮件",type:"邮件 · 跟进+deadline",en:"Kind reminder — could you please confirm by COB tomorrow so I can update the client?",zh:"温馨提醒——请于明天工作日结束前确认，以便我同步客户。"},
+{cat:"商务邮件",type:"邮件 · 致谢",en:"Thank you for the swift turnaround. Looking forward to working with you again.",zh:"感谢您的快速响应，期待下次合作。"},
+{cat:"商务邮件",type:"邮件 · 抄送对接人",en:"Looping in our operations team for the on-the-ground arrangements.",zh:"抄送我们的运营团队负责落地安排。"},
+{cat:"商务邮件",type:"邮件 · 询发票",en:"Could you please issue the invoice in the name of [Company] with VAT number [xxx]?",zh:"请以[公司名称]开发票，增值税号为[xxx]。"},
+{cat:"读网站",type:"网站理解 · 房价说明",en:"€220 per night, taxes included. Free cancellation until 24 hours before check-in.",zh:"每晚220欧元（含税）。入住前24小时内可免费取消。"},
+{cat:"读网站",type:"网站理解 · 价格陷阱",en:"Price excludes city tax (€4 per person per night), payable at the property.",zh:"价格不含城市税（每人每晚4欧），到店支付。"},
+{cat:"读网站",type:"网站理解 · 房型描述",en:"Deluxe Double Room with King Bed, sea view, en-suite bathroom, breakfast included.",zh:"豪华大床房（特大床）、海景、独立卫浴，含早餐。"},
+{cat:"读网站",type:"网站理解 · 限时优惠",en:"Reserve now, pay later. Only 2 rooms left at this price!",zh:"先订后付。此价格仅剩2间！"},
+{cat:"读网站",type:"网站理解 · 不可退",en:"This is a non-refundable rate. Cancellations and changes are not permitted.",zh:"此为不可退款房价，不允许取消或更改。"},
+{cat:"读网站",type:"网站理解 · 含/不含",en:"Includes: skip-the-line entry, audio guide. Not included: hotel pickup, lunch.",zh:"含：免排队入场、语音导览。不含：酒店接送、午餐。"},
+{cat:"读网站",type:"网站理解 · 集合点",en:"Meeting point: in front of the Colosseum metro exit at 8:45 AM. Tour starts at 9:00 AM sharp.",zh:"集合点：罗马斗兽场地铁出口前，上午8:45。导览9:00整准时开始。"},
+{cat:"读网站",type:"网站理解 · 取消政策",en:"Free cancellation up to 24 hours before the experience starts. After that, no refund.",zh:"体验开始前24小时可免费取消，之后不退款。"},
+{cat:"网络用语",type:"邮件结尾",en:"Best regards, / Kind regards, / Cheers,",zh:"邮件常见结尾：此致敬礼 / 谨上 / 谢啦。"},
+{cat:"网络用语",type:"快速回应",en:"Got it. On it. Will revert ASAP.",zh:"明白，正在处理，会尽快回复。"},
+{cat:"网络用语",type:"友好确认",en:"Sounds good — let me know if anything changes.",zh:"听起来不错——有变动告诉我。"},
+{cat:"突发",type:"客户被拒入住",en:"My client just arrived but the front desk says there is no reservation. Could you check urgently?",zh:"我的客户刚到，前台说没有预订。能否紧急核查？"},
+{cat:"突发",type:"客户在国外打不通你",en:"FYI my client is currently in [city] and may contact you directly. Their name is [xxx], reference [yyy].",zh:"告知一下，我的客户在[城市]，可能会直接联系你们。客户姓名[xxx]，编号[yyy]。"},
+{cat:"突发",type:"行程冲突",en:"There seems to be a conflict between the museum slot and the train time. Could we move the slot to 2 PM?",zh:"博物馆时段与火车时间冲突，能否把时段调到下午2点？"},
+{cat:"商务电话",type:"电话 · 请等一下",en:"Could you hold on for a moment, please? I need to check with my colleague.",zh:"请稍等一下，我需要和同事确认。"},
+{cat:"商务电话",type:"电话 · 转接",en:"Could you transfer me to the reservations department, please?",zh:"请帮我转到预订部好吗？"},
+{cat:"商务电话",type:"电话 · 留言",en:"Could I leave a message? Please ask them to call back at +86 xxx.",zh:"可以留个口信吗？请他们回拨 +86 xxx。"},
+{cat:"日常闲聊",type:"打招呼",en:"Hey! Long time no see — how have you been?",zh:"嗨！好久不见，最近怎么样？"},
+{cat:"日常闲聊",type:"回应近况",en:"Pretty hectic, but I'm hanging in there. How about you?",zh:"挺忙的，不过还撑得住。你呢？"},
+{cat:"日常闲聊",type:"周末计划",en:"Any plans for the weekend? — Just chilling at home, maybe catch up on some Netflix.",zh:"周末有安排吗？——就在家躺着，可能追下剧。"},
+{cat:"日常闲聊",type:"邀请聚会",en:"We're grabbing dinner Friday — want to join? — Sounds fun, count me in!",zh:"周五一起吃饭，要来吗？——听起来不错，算我一个！"},
+{cat:"日常闲聊",type:"礼貌拒绝",en:"I'd love to, but I'm completely swamped this week. Rain check?",zh:"我很想去，但这周忙到不行。改天行吗？"},
+{cat:"日常闲聊",type:"道别",en:"Anyway, I should get going. Take care — catch you later!",zh:"行，那我先走了。保重——回头聊！"},
+{cat:"日常闲聊",type:"小赞美",en:"Wow, that looks amazing — where did you get it?",zh:"哇，太好看了——你在哪买的？"},
+{cat:"日常闲聊",type:"天气闲聊",en:"Crazy weather we're having, right? It was freezing this morning.",zh:"最近天气太疯狂了对吧？早上还冷得不行。"},
+{cat:"日常闲聊",type:"小道歉",en:"Sorry, that totally slipped my mind. Let me get back to you in 10.",zh:"抱歉，完全忘了。10分钟内回你。"},
+{cat:"日常闲聊",type:"赶时间",en:"I'm running late — be there in 10. Sorry!",zh:"我要迟到了，10分钟到。抱歉！"},
+{cat:"日常闲聊",type:"鼓励",en:"Hang in there. It'll all work out.",zh:"撑住，一切都会好的。"},
+{cat:"日常情绪",type:"压力大",en:"I've been stressed out all week — I really need a break.",zh:"我这一周压力山大，真的需要休息一下。"},
+{cat:"日常情绪",type:"很满足",en:"I'm so relieved that's over — I was super nervous all week.",zh:"终于结束了，我松了口气——这一周一直好紧张。"},
+{cat:"日常情绪",type:"很累",en:"I'm completely exhausted after that 12-hour flight.",zh:"那12小时飞行下来我整个人都累瘫了。"},
+{cat:"日常情绪",type:"开心",en:"I'm so pumped about this trip — it's going to be amazing!",zh:"我对这次旅行超级兴奋——肯定特别棒！"},
+{cat:"点餐咖啡",type:"咖啡店点单",en:"I'll have a large iced latte with oat milk and an extra shot, please.",zh:"我要一个大杯冰拿铁，燕麦奶，加一份浓缩，谢谢。"},
+{cat:"点餐咖啡",type:"堂食/外带",en:"Is that for here or to go? — To go, please.",zh:"堂食还是外带？——外带，谢谢。"},
+{cat:"点餐咖啡",type:"餐厅点菜",en:"Could I get the salmon, medium rare, with mashed potatoes on the side?",zh:"我要那个三文鱼，三分熟，配土豆泥。"},
+{cat:"点餐咖啡",type:"询问推荐",en:"What would you recommend? Anything that's a local specialty?",zh:"你推荐什么？有什么本地特色菜吗？"},
+{cat:"点餐咖啡",type:"打包/买单",en:"Could we get a doggy bag? And the check, please.",zh:"可以打包吗？麻烦买单。"},
+{cat:"点餐咖啡",type:"AA",en:"Let's split the bill, OK? — Sure, sounds good.",zh:"我们AA吧？——好啊，没问题。"},
+{cat:"点餐咖啡",type:"我请客",en:"Put it on my card — lunch is on me today.",zh:"放我卡上吧，今天午饭我请。"},
+{cat:"日常工作",type:"忙翻了",en:"I'm completely swamped — can we touch base tomorrow?",zh:"我忙到不行——咱们明天再沟通好吗？"},
+{cat:"日常工作",type:"想出方案",en:"Let me figure something out and get back to you.",zh:"我想想办法，再回复你。"},
+{cat:"日常工作",type:"求帮助",en:"Could you give me a hand with this for a sec?",zh:"你能帮我一下这个吗？就一会儿。"},
+{cat:"日常工作",type:"延后讨论",en:"Let's circle back on this later — too much going on right now.",zh:"这件事咱们晚点再谈——现在事太多。"},
+{cat:"雅思·小作文",type:"Task 1 · 开头",en:"The chart illustrates the changes in [topic] over the period from [year] to [year].",zh:"该图表展示了[主题]在[起始年]至[结束年]期间的变化。"},
+{cat:"雅思·小作文",type:"Task 1 · 总览",en:"Overall, the most striking trend is that [main trend], while [secondary trend].",zh:"总体而言，最显著的趋势是[主要趋势]，与此同时[次要趋势]。"},
+{cat:"雅思·小作文",type:"Task 1 · 数据描述",en:"The number of [X] rose sharply from [A] in [year] to [B] in [year].",zh:"[X]的数量从[年]的[A]急剧上升到[年]的[B]。"},
+{cat:"雅思·小作文",type:"Task 1 · 对比",en:"In contrast, the figure for [Y] fell steadily over the same period.",zh:"相比之下，[Y]的数据在同一时期稳步下降。"},
+{cat:"雅思·小作文",type:"Task 1 · 顶峰",en:"By [year], [X] had reached a peak of approximately [number]%.",zh:"到[年]，[X]达到了约[数字]%的峰值。"},
+{cat:"雅思·小作文",type:"Task 1 · 显著差异",en:"There was a significant difference between [A] and [B].",zh:"[A]和[B]之间存在显著差异。"},
+{cat:"雅思·小作文",type:"Task 1 · 主导地位",en:"While [X] dominated the early period, [Y] took over after [year].",zh:"虽然早期[X]占主导，但[年]之后[Y]超越了它。"},
+{cat:"雅思·小作文",type:"Task 1 · 波动",en:"The figure for [X] fluctuated throughout the decade, ranging from [A] to [B].",zh:"[X]的数据在十年间持续波动，介于[A]和[B]之间。"},
+{cat:"雅思·小作文",type:"Task 1 · 占比",en:"Roughly half of all respondents agreed with the statement.",zh:"大约一半的受访者同意该说法。"},
+{cat:"雅思·小作文",type:"Task 1 · 结尾",en:"In summary, the data suggest a clear shift towards [trend].",zh:"总之，数据表明明显朝[趋势]方向转变。"},
+{cat:"雅思·大作文",type:"Task 2 · 开头",en:"There is no doubt that this issue has sparked widespread debate in recent years.",zh:"毫无疑问，这一问题近年来引发了广泛讨论。"},
+{cat:"雅思·大作文",type:"Task 2 · 双方观点",en:"Some people argue that [view A], while others maintain that [view B].",zh:"有人认为[观点A]，而另一些人则坚持[观点B]。"},
+{cat:"雅思·大作文",type:"Task 2 · 表态",en:"In my opinion, the advantages outweigh the disadvantages.",zh:"在我看来，优点大于缺点。"},
+{cat:"雅思·大作文",type:"Task 2 · 给原因",en:"One of the main reasons for this is that [reason].",zh:"造成这种情况的主要原因之一是[原因]。"},
+{cat:"雅思·大作文",type:"Task 2 · 举例",en:"A clear example of this can be seen in [example].",zh:"一个明显的例子可以在[例子]中看到。"},
+{cat:"雅思·大作文",type:"Task 2 · 进一步",en:"Furthermore, it is undeniable that [supporting point].",zh:"此外，不可否认[支持论据]。"},
+{cat:"雅思·大作文",type:"Task 2 · 让步反驳",en:"However, this view has its limitations, as [counter-argument].",zh:"然而，这种观点也有其局限性，因为[反论]。"},
+{cat:"雅思·大作文",type:"Task 2 · 解决方案",en:"To address this problem, governments should [action].",zh:"为了解决这一问题，政府应该[行动]。"},
+{cat:"雅思·大作文",type:"Task 2 · 结尾表态",en:"In conclusion, although both sides have merit, I believe that [your view].",zh:"综上所述，虽然两方都有道理，但我认为[你的观点]。"},
+{cat:"雅思·大作文",type:"Task 2 · 呼吁行动",en:"Therefore, it is essential to take action immediately to ensure a sustainable future.",zh:"因此，必须立即行动以确保可持续的未来。"},
+{cat:"雅思·口语高分",type:"Speaking · 真诚开场",en:"To be honest, that's something I haven't really thought about before.",zh:"说实话，这是我之前没怎么想过的事情。"},
+{cat:"雅思·口语高分",type:"Speaking · 礼貌赞同",en:"Well, that's a great question. I'd say that [answer].",zh:"嗯，这是个好问题。我想说[答案]。"},
+{cat:"雅思·口语高分",type:"Speaking · 视情况",en:"It really depends on the situation, but generally speaking, [opinion].",zh:"这要看情况，但一般来说，[观点]。"},
+{cat:"雅思·口语高分",type:"Speaking · 个人喜好",en:"One thing I particularly enjoy is [thing] because [reason].",zh:"我特别喜欢的一件事是[事物]，因为[原因]。"},
+{cat:"雅思·口语高分",type:"Speaking · 二选一",en:"If I had to choose, I'd probably go with [choice], simply because [reason].",zh:"如果非要选，我大概会选[选择]，纯粹是因为[原因]。"},
+{cat:"雅思·口语高分",type:"Speaking · 长期爱好",en:"I've always been keen on [hobby] since I was a child.",zh:"我从小就一直热衷于[爱好]。"},
+{cat:"雅思·口语高分",type:"Speaking · 列原因",en:"There are several reasons why I feel this way. Firstly, [reason 1]. Secondly, [reason 2].",zh:"我有这种感觉有几个原因。首先，[原因1]。其次，[原因2]。"},
+{cat:"雅思·口语高分",type:"Speaking · 缓和断言",en:"I think it's safe to say that [opinion] is widely accepted.",zh:"可以说[观点]是被广泛接受的。"},
+{cat:"雅思·口语高分",type:"Speaking · 整体评价",en:"On the whole, I'd say it's been a positive experience.",zh:"总体而言，这是一段积极的经历。"},
+{cat:"雅思·口语高分",type:"Speaking · 改变想法",en:"Now that I think about it, I'd actually have to disagree.",zh:"仔细想想，其实我并不同意。"}
+];
+
+const phoneDialogs = [
+{cat:"酒店",scenario:"📞 酒店预订",lines:[
+["Hotel","Good afternoon, reservations. How can I help you?"],
+["YOU","Hello, this is Lin calling from a travel agency. I'd like to check room availability."],
+["Hotel","Sure. What dates are you looking for?"],
+["YOU","From September 10th to 13th, for two guests. Could you also confirm the cancellation policy?"]
+],tip:"先说明自己是 travel agency，再问日期、人数、房型、价格和取消政策。"},
+{cat:"餐厅",scenario:"📞 餐厅预约",lines:[
+["Restaurant","Hello, how may I help you?"],
+["YOU","Hello, I'd like to make a dinner reservation for two people tomorrow at 7 PM."],
+["Restaurant","May I have your name, please?"],
+["YOU","Sure. The reservation is under Lin. Could you please confirm the dress code?"]
+],tip:"餐厅预约重点：人数、日期、时间、名字、是否有着装要求。"},
+{cat:"突发",scenario:"📞 航班取消",lines:[
+["Airline","How may I assist you?"],
+["YOU","My clients' flight has been cancelled. We need to rebook as soon as possible."],
+["Airline","Could you provide the booking reference?"],
+["YOU","Yes, it is [reference]. My clients must arrive no later than tomorrow morning."]
+],tip:"突发问题要直接说 deadline：no later than tomorrow morning。"}
+];
+
+const liveScenarios = [
+{cat:"酒店",title:"🏨 办理入住",role:"客户/定制师都可用",key:[["I have a reservation under the name Lin.","我有一个预订，名字是Lin。"],["Could I check in now?","我现在可以入住吗？"],["Is breakfast included?","包含早餐吗？"]],tip:"入住最常用 under the name + 姓名。"},
+{cat:"餐厅",title:"🍽 不会点餐",role:"客户使用",key:[["Could you recommend something popular?","有什么推荐菜吗？"],["We don’t eat beef.","我们不吃牛肉。"],["Can we share this dish?","这道菜可以分着吃吗？"]],tip:"不会点餐就用 recommend，比乱点安全。"},
+{cat:"问路",title:"🧭 问路",role:"客户使用",key:[["Excuse me, how do I get to the station?","请问怎么去车站？"],["Is it far from here?","离这里远吗？"],["Can you show me on the map?","可以在地图上指给我吗？"]],tip:"先说 Excuse me，语气会自然很多。"},
+{cat:"交通",title:"🚕 打车",role:"客户使用",key:[["Please take me to this address.","请带我去这个地址。"],["Can you use the meter?","可以打表吗？"],["Please stop here.","请在这里停车。"]],tip:"打车最好给司机看地址，不要只靠口说。"},
+{cat:"紧急",title:"🆘 行李丢失",role:"定制师处理",key:[["My luggage is missing.","我的行李丢了。"],["This is my baggage tag.","这是我的行李条。"],["When will it be delivered?","什么时候可以送到？"]],tip:"行李条 baggage tag 是关键凭证。"},
+{cat:"医疗",title:"💊 药房买药",role:"客户使用",key:[["I have a fever.","我发烧了。"],["Do you have something for a cold?","有感冒药吗？"],["I’m allergic to penicillin.","我对青霉素过敏。"]],tip:"过敏必须用 allergic，药房会更重视。"},
+{cat:"海关",title:"🛃 入境问答",role:"客户使用",key:[["I’m here for tourism.","我是来旅游的。"],["I will stay for five days.","我会停留五天。"],["Here is my return ticket.","这是我的回程机票。"]],tip:"海关回答越短越好，不要主动展开太多。"},
+{cat:"购物",title:"🛍 退税",role:"客户使用",key:[["Can I get a tax refund?","可以退税吗？"],["Where is the tax refund counter?","退税柜台在哪里？"],["Do I need to show my passport?","需要出示护照吗？"]],tip:"欧洲购物常问 tax refund。"}
+];
+
+const proToolkit = [
+{cat:"邮件",title:"📧 酒店预订邮件",content:`Dear Sir or Madam,
+
+I hope this message finds you well.
+
+I would like to inquire about room availability from [date] to [date] for [number] guests.
+
+Could you please advise the room types available and the best rates?
+
+Also, kindly let me know your cancellation policy.
+
+Best regards,
+Lin`},
+{cat:"邮件",title:"📧 修改预订",content:`Dear [Hotel Name],
+
+I would like to modify an existing reservation.
+
+The current booking is under the name [Name], originally from [old date] to [old date].
+
+We would like to change it to [new date].
+
+Please let me know if this is possible.
+
+Thank you.`},
+{cat:"邮件",title:"📧 催回复",content:`Dear [Name],
+
+Just following up on my previous email.
+
+Could you please advise at your earliest convenience?
+
+Looking forward to your reply.
+
+Thank you.`},
+{cat:"电话",title:"📞 万能开场白",content:`Hello, this is Lin calling from a travel agency.
+
+I’d like to make a reservation, please.`},
+{cat:"电话",title:"📞 听不懂救命句",content:`Sorry, could you speak a bit more slowly?
+
+Let me confirm what you said.
+
+Could you repeat that, please?`},
+{cat:"电话",title:"📞 拼名字",content:`Let me spell that for you:
+
+L for Lima
+I for India
+N for November`},
+{cat:"供应商",title:"🏨 询价",content:`Could you offer your best available rate for this request?
+
+We are a travel agency and may have ongoing cooperation.`},
+{cat:"供应商",title:"🏨 问取消政策",content:`Could you please confirm your cancellation policy?
+
+Is this booking refundable or non-refundable?`},
+{cat:"突发",title:"⚠️ 航班取消处理",content:`The flight has been cancelled.
+
+We need to rebook as soon as possible.
+
+My client must arrive before [time].`},
+{cat:"突发",title:"⚠️ 酒店无房",content:`There seems to be an issue with the reservation.
+
+My client has a confirmed booking.
+
+Could you please check and resolve this urgently?`}
+];
+
+let activeCat='all', filtered=[], idx=0, know=0, again=0, searchKeyword='', sentCat='all', phoneCat='all', liveCat='all', proCat='all', qc=0, qw=0, quizCorrect=0, quizDone=false;
+
+function speak(text){ if(!window.speechSynthesis){alert('当前浏览器不支持语音');return;} speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(text.replace(/\[[^\]]+\]/g,'')); u.lang='en-US'; u.rate=.82; speechSynthesis.speak(u); }
+function shuffle(a){for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function switchTab(t){document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active')); event.target.classList.add('active'); document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active')); document.getElementById('tab-'+t).classList.add('active')}
+function pills(id,cats,active,fn){document.getElementById(id).innerHTML=['全部',...cats].map(c=>{let v=c==='全部'?'all':c;return `<button class="cat-pill ${v===active?'active':''}" onclick="${fn}('${v}',this)">${c}</button>`}).join('')}
+function init(){pills('catPills',[...new Set(vocab.map(v=>v.cat))],activeCat,'setVocabCat');loadCards();pills('sentCatPills',[...new Set(sentences.map(s=>s.cat))],sentCat,'setSentCat');renderSentences();pills('phoneCatPills',[...new Set(phoneDialogs.map(s=>s.cat))],phoneCat,'setPhoneCat');renderPhone();pills('liveCatPills',[...new Set(liveScenarios.map(s=>s.cat))],liveCat,'setLiveCat');renderLive();pills('proCatPills',[...new Set(proToolkit.map(s=>s.cat))],proCat,'setProCat');renderPro();nextQuiz();}
+function setVocabCat(c,b){
+  activeCat=c;
+  document.querySelectorAll('#catPills .cat-pill').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  idx=0;know=0;again=0;
+  applyVocabFilter();
+}
+
+function searchVocab(){
+  searchKeyword = (document.getElementById('searchInput')?.value || '').trim().toLowerCase();
+  idx=0;know=0;again=0;
+  applyVocabFilter();
+}
+
+function clearSearch(){
+  const input = document.getElementById('searchInput');
+  if(input) input.value='';
+  searchKeyword='';
+  idx=0;know=0;again=0;
+  applyVocabFilter();
+}
+
+function renderSearchResults(){
+  const box = document.getElementById('searchResults');
+  if(!box) return;
+  if(!searchKeyword){
+    box.style.display='none';
+    box.innerHTML='';
+    return;
+  }
+  box.style.display='block';
+  if(filtered.length===0){
+    box.innerHTML='<div class="search-result-item"><div class="search-result-en">没有找到</div><div class="search-result-cat">换一个关键词，比如中文、英文、城市名或景点名。</div></div>';
+    return;
+  }
+  const top = filtered.slice(0, 20);
+  box.innerHTML = top.map((v,i)=>`
+    <div class="search-result-item" onclick="jumpToResult(${i})">
+      <div class="search-result-en">${v.en}</div>
+      <div class="search-result-zh">${v.zh}</div>
+      <div class="search-result-cat">${v.cat} ｜ ${v.example || ''}</div>
+    </div>
+  `).join('') + (filtered.length>20 ? `<div class="search-result-item"><div class="search-result-cat">还有 ${filtered.length-20} 条结果，建议输入更精确关键词。</div></div>` : '');
+}
+
+function jumpToResult(i){
+  idx=i;
+  showCard();
+  document.getElementById('flashcard')?.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+function applyVocabFilter(){
+  const base = activeCat==='all' ? [...vocab] : vocab.filter(v=>v.cat===activeCat);
+  if(searchKeyword){
+    filtered = base.filter(v =>
+      (v.en && v.en.toLowerCase().includes(searchKeyword)) ||
+      (v.zh && v.zh.toLowerCase().includes(searchKeyword)) ||
+      (v.example && v.example.toLowerCase().includes(searchKeyword)) ||
+      (v.cat && v.cat.toLowerCase().includes(searchKeyword))
+    );
+  } else {
+    filtered = base;
+  }
+  shuffle(filtered);
+  document.getElementById('totalCount').innerText=filtered.length;
+  const rangeText = activeCat==='all' ? '全部词库' : activeCat;
+  const hint = document.getElementById('searchHint');
+  if(hint){
+    hint.innerText = searchKeyword
+      ? `查询“${document.getElementById('searchInput').value}”：在【${rangeText}】中找到 ${filtered.length} 条，下面可点选结果`
+      : `当前搜索范围：${rangeText}`;
+  }
+  renderSearchResults();
+  showCard();
+}
+
+function loadCards(){applyVocabFilter()}
+
+function showCard(){document.getElementById('knowCount').innerText=know;document.getElementById('againCount').innerText=again;if(filtered.length===0){
+  document.getElementById('cardCounter').innerText='0 / 0';
+  document.getElementById('flashcard').innerHTML='<div class="en">没有找到相关词汇</div><div class="example">可以换一个关键词，比如英文、中文、城市名、景点名。</div><div class="btnrow"><button class="btn gold" onclick="document.getElementById(\'searchInput\').value=\'\';searchVocab()">清空搜索</button></div>';
+  document.getElementById('knowCount').innerText=know;document.getElementById('againCount').innerText=again;
+  return;
+}
+if(idx>=filtered.length){document.getElementById('flashcard').innerHTML='<div class="en">🎉 本轮完成</div><button class="btn gold" onclick="loadCards()">重新开始</button>';return}let c=filtered[idx];document.getElementById('cardCounter').innerText=`${idx+1} / ${filtered.length}`;document.getElementById('flashcard').innerHTML=`<div class="tag">${c.cat}</div><div class="en">${c.en}</div><div class="phonetic">${c.phonetic}</div><button class="speak" onclick="speak('${esc(c.en)}')">🔊 朗读单词</button> <button class="speak" onclick="speak('${esc(c.example)}')">🔊 朗读例句</button><div class="zh" id="cardZh"><b>${c.zh}</b><div class="example">例：${c.example}</div></div><div class="btnrow"><button class="btn" onclick="document.getElementById('cardZh').classList.add('show')">查看中文</button><button class="btn rust" onclick="again++;idx++;showCard()">再练</button><button class="btn teal" onclick="know++;idx++;showCard()">掌握</button></div>`}
+function esc(s){return String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'")}
+function setSentCat(c,b){sentCat=c;document.querySelectorAll('#sentCatPills .cat-pill').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderSentences()}
+function renderSentences(){let list=sentCat==='all'?sentences:sentences.filter(s=>s.cat===sentCat);document.getElementById('sentenceList').innerHTML='<div class="section-title">📝 实用句型</div>'+list.map(s=>`<div class="sentence-card"><div class="type">${s.type}</div><div class="sentence-en">${s.en}</div><button class="speak" onclick="speak('${esc(s.en)}')">🔊 朗读</button><div class="sentence-zh">${s.zh}</div></div>`).join('')}
+function setPhoneCat(c,b){phoneCat=c;document.querySelectorAll('#phoneCatPills .cat-pill').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderPhone()}
+function renderPhone(){let list=phoneCat==='all'?phoneDialogs:phoneDialogs.filter(s=>s.cat===phoneCat);document.getElementById('phoneList').innerHTML='<div class="section-title">📞 电话情景</div>'+list.map(d=>`<div class="phone-card"><div class="type">${d.scenario}</div>${d.lines.map(l=>`<div class="line ${l[0]==='YOU'?'you':''}"><div class="speaker">${l[0]}</div>${l[1]} <button class="speak" onclick="speak('${esc(l[1])}')">🔊</button></div>`).join('')}<div class="tip">💡 ${d.tip}</div></div>`).join('')}
+function setLiveCat(c,b){liveCat=c;document.querySelectorAll('#liveCatPills .cat-pill').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderLive()}
+function renderLive(){let list=liveCat==='all'?liveScenarios:liveScenarios.filter(s=>s.cat===liveCat);document.getElementById('liveList').innerHTML='<div class="section-title">🔥 实战场景</div>'+list.map(s=>`<div class="sentence-card"><div class="type">${s.title} ｜ ${s.role}</div>${s.key.map(k=>`<div class="sentence-en">${k[0]}</div><button class="speak" onclick="speak('${esc(k[0])}')">🔊 朗读</button><div class="sentence-zh">${k[1]}</div>`).join('')}<div class="tip">💡 ${s.tip}</div></div>`).join('')}
+function setProCat(c,b){proCat=c;document.querySelectorAll('#proCatPills .cat-pill').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderPro()}
+function renderPro(){let list=proCat==='all'?proToolkit:proToolkit.filter(s=>s.cat===proCat);document.getElementById('proList').innerHTML='<div class="section-title">🧠 定制师工作台</div>'+list.map((s,i)=>`<div class="sentence-card"><div class="type">${s.title}</div><pre id="pro-${i}">${s.content}</pre><button class="copy" onclick="copyText('pro-${i}',this)">📋 复制</button><button class="speak" onclick="speak(document.getElementById('pro-${i}').innerText)">🔊 朗读</button></div>`).join('')}
+function copyText(id,btn){navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{btn.innerText='✅ 已复制';setTimeout(()=>btn.innerText='📋 复制',1200)})}
+function nextQuiz(){quizDone=false;let pool=shuffle([...vocab]);let correct=pool[0];let opts=shuffle(pool.slice(0,4));quizCorrect=opts.findIndex(o=>o.en===correct.en);document.getElementById('qCorrect').innerText=qc;document.getElementById('qWrong').innerText=qw;document.getElementById('quizArea').innerHTML=`<div class="card"><div class="tag">请选择中文释义</div><div class="en">${correct.en}</div><button class="speak" onclick="speak('${esc(correct.en)}')">🔊 听读音</button><div class="btnrow" style="display:block">${opts.map((o,i)=>`<button class="btn light" style="display:block;width:100%;margin:8px 0;text-align:left" onclick="answerQuiz(${i},${quizCorrect},this)">${o.zh}</button>`).join('')}</div><div id="qfb" class="example"></div></div>`}
+function answerQuiz(i,c,b){if(quizDone)return;quizDone=true;if(i===c){qc++;b.className='btn teal'}else{qw++;b.className='btn rust';document.querySelectorAll('#quizArea .btn.light')[c]?.classList.add('teal')}document.getElementById('qCorrect').innerText=qc;document.getElementById('qWrong').innerText=qw;document.getElementById('qfb').innerHTML='<br><button class="btn gold" onclick="nextQuiz()">下一题 →</button>'}
+window.onload=init;
+</script>
+</body>
+</html>
